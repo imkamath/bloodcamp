@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Blood Donation Camp - HDFC BANK LIMITED</title>
+<link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAIAAABMXPacAAAEhUlEQVR42u2dvYskRRiHf29V9fY4vcHthyCKJnufi5rIsMt6geYihwcGsolykWJiYLjBZgoeyImCCAZGogjiv3Aieh4mHoqpmKgzG7h9O73bVa/BXKDgzs1OTff02r8n7Rn646nq+ur3LemvraP5WKuDQefay9nuDryHtf/9M+9hbb6zO/zoY1lehvfNvzOHU4QxSBJYC2OO8wRjjj3azHvCqUN1mkMUQCiAAggFUAChAAogFEABhAIogFAABVAAoQAKIBTQUtxsVgqNQAFBdWvCcG7StUZj4BycrfB6RgRFCPMWIKJ5juIQAmiVi/L9vu7nk/xW93P9408ErXxRPl2QbjdyHdRFln3N76bPP+d6T8H7ClfDRXQ4dE8+ca+Ajyn7QHr1ij23Jp1OhUvEIcDa8vYPxZdfSbcbUw8iBQiGw+TZZ9IXX6jvrSky/lByeSu5vFXDhRyeOVN8+hmyrAGvoNKj9HC2yvvVST85CQEhoNIWwHtYq3k+rjTU2giPHn21Ak7UKai4dycY93kSu6EcBxAKoABCARRAKIACCAVQAKEACiAUQAGEAiiAoIGB2iHUHeIrRoQC/rGKJawBc+OgKH/5bQ/1KRConntkqZs6BaTNAkJQY+TOr4Pea58gMdC6vqs4LL95b3vz/EMhqJ1r5WtEDRAARsRIPbkeRESb0QCwF0QBFMBHQAEUQCiAAggFoJ1TEdZGRQ5ZC2npNA5E7j2BGAG6txfxb6v9gRZFSwUUhQ4GEImJhXKd7Zcw9WSIMfpX7i5euE/gyv+y7APmwvnOtVdkMZs+RCmoy66/NZtrsm1qTowBkGxtJlub0W1AUcDFhuq1tBnQ6DDVsnTxzUh7GTXCcQrZDeU4gAIIBVAAoQAKIJjHZJz3UcMo1fbOx6nGPj3vHdKUxXD6gVjkJIK1Lt/ZnT7phDHYzxeuXkk2egjhdO2eg8h8QcaUt24Xn3+BLGYyLrjhBx9GTUf/3jdnzyYbPQRtUYOiCsD/eOfgnXdldSVqOlqWl2MEQEUeaOtLLE3lwVVZWooSEJVYTYCyRNCWClBFWcL7mGfIbijHARRAKIACCAVQAEGLoyRFRKSuEDHRxsweNkJAUA3FEUKtQXqhGZsPuyaEB196dPnmje1a40WDPv7YShPikxtRAxY7ydPrD2NeAZoUoPNIVWCYquBfqbDbmqqA3VAKoABCARRAKIACCAVQAKEACiAUQAGEAiiAUAD4VQQmilYYfSEsFX+KfKLtbKXi7WxHJ5q/AFXJsmYlnKhhO1trAUiWxW/a7WJ3te+kRze/RnkEHyrMWCOiReEuXXQbPageW7pVIVJ+e6v86WdJ02q3NDfm6LvvEX0W6a+txz6auwc4LKoucdrvd15/dfH626PdrMdsdL3/xpvDG+/LSlTk0EQsLEi3GylgJq+gLhazyqu8iEy2e7tkmazGRg7VlC9oZo1wDZTlpCcKIT5yiN1QjgMIBVAAoQAKIBRAAYQCKIBQAAUQCqAAQgEUQCiAAjDXDXROfAjMloIZpQq+36I89DRlcfwbDItjV7PWZA4AAAAASUVORK5CYII=">
+<style>
+:root{--blue:#004C8F;--blue-bg:#E8F0FB;--red:#ED232A;--red-bg:#FDECEC;--green:#1E7B3C;--green-bg:#E6F4EA;--amber:#8A5A00;--amber-bg:#FFF4DC;--violet:#5B3FA8;--violet-bg:#EFEAFB;--text:#1F2328;--muted:#5F6670;--faint:#8B929A;--border:#D9DDE2;--bg:#F4F6F8;--card:#fff;--r:10px}
+*{box-sizing:border-box}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;background:var(--bg);color:var(--text);font-size:15px;line-height:1.5}
+.wrap{max-width:560px;margin:0 auto;padding:16px}
+.card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:16px;margin-bottom:14px}
+h2{font-size:17px;font-weight:600;margin:20px 0 8px}
+label.lb,.lb{display:block;font-size:13px;color:var(--muted);margin-bottom:4px}
+input,select,textarea{width:100%;font:inherit;font-size:15px;padding:9px 10px;border:1px solid var(--border);border-radius:8px;background:#fff;color:var(--text)}
+input[type=checkbox]{width:18px;height:18px;padding:0;margin:0;flex-shrink:0}
+input:focus,select:focus,textarea:focus{outline:2px solid var(--blue);outline-offset:-1px;border-color:var(--blue)}
+.field{margin-bottom:12px}
+.err{font-size:13px;color:var(--red);margin-top:4px;min-height:0}
+.okmsg{font-size:14px;color:var(--green);margin-top:8px}
+button,.btn{font:inherit;font-size:14px;padding:9px 14px;border-radius:8px;border:1px solid var(--border);background:#fff;color:var(--text);cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;justify-content:center;gap:6px}
+button:hover,.btn:hover{background:var(--bg)}
+button.primary{background:var(--blue);border-color:var(--blue);color:#fff}
+button.primary:hover{background:#003A6E}
+button.danger{color:var(--red)}
+button:disabled{opacity:.55;cursor:default}
+.full{width:100%}
+.row{display:flex;gap:8px;align-items:center}
+.g2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.brand{display:flex;align-items:center;gap:12px}
+.brand img{width:44px;height:44px;flex-shrink:0}
+.brand .org{font-weight:700;font-size:16px;color:var(--blue);letter-spacing:.2px}
+.brand .col{font-size:13px;color:var(--muted)}
+.pill{font-size:12px;padding:2px 8px;border-radius:6px;background:var(--bg);color:var(--muted);white-space:nowrap}
+.p-blue{background:var(--blue-bg);color:var(--blue)}.p-green{background:var(--green-bg);color:var(--green)}.p-red{background:var(--red-bg);color:var(--red)}.p-amber{background:var(--amber-bg);color:var(--amber)}.p-violet{background:var(--violet-bg);color:var(--violet)}
+.list-row{display:flex;align-items:center;gap:6px;padding:9px 0;border-top:1px solid var(--border);font-size:14px}
+.list-row:first-child{border-top:none}
+.grow{flex:1;min-width:0}
+.ell{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.ib{padding:5px 7px;font-size:13px;line-height:1}
+.panel{background:#FAFBFC;border:1px solid var(--blue);border-radius:10px;padding:12px;margin:4px 0 10px}
+.stat{background:var(--bg);border-radius:10px;padding:10px 12px}
+.stat .n{font-size:22px;font-weight:600}
+.stat .t{font-size:12px;color:var(--muted)}
+.tabs{display:flex;gap:6px;margin:12px 0}
+.tabs button{flex:1}
+.tabs button.on{background:var(--blue-bg);border-color:var(--blue);color:var(--blue);font-weight:600}
+.muted{color:var(--muted);font-size:13px}
+.seg{display:flex;gap:6px}
+.seg button{flex:1;font-size:13px;padding:8px 4px}
+.seg button.on{border:2px solid var(--blue);background:var(--blue-bg);color:var(--blue);font-weight:600}
+.drop{color:var(--red)}
+.hide{display:none!important}
+.chk{display:flex;gap:10px;align-items:flex-start;font-size:14px}
+.chk input{margin-top:2px}
+.poster{text-align:center}
+.poster #qr{display:inline-block;padding:12px;background:#fff;border:1px solid var(--border);border-radius:12px;margin:14px 0}
+.poster #qr img,.poster #qr canvas{display:block}
+@media print{body{background:#fff}.noprint{display:none!important}.card{border:none}}
+
+.drow{border-top:1px solid var(--border);padding:10px 0}
+.drow:first-child{border-top:none}
+.sbtn{font-size:12px;padding:6px 8px}
+.sbtn.s{background:var(--green-bg);color:var(--green);border-color:var(--green);font-weight:600}
+.sbtn.r{background:var(--red-bg);color:var(--red);border-color:var(--red);font-weight:600}
+.rmk{display:flex;gap:8px;align-items:center;margin-top:8px}
+.rmk input,.rmk select{flex:1;padding:7px 9px;font-size:14px}
+.saved{font-size:12px;min-width:58px}
+.upd{font-size:11px;color:var(--faint);margin-top:4px}
+.qrbox{background:#fff;border:1px solid var(--border);border-radius:8px;padding:4px;line-height:0;flex-shrink:0}
+#toast{position:fixed;left:50%;bottom:20px;transform:translateX(-50%);background:#1F2328;color:#fff;padding:10px 16px;border-radius:10px;font-size:14px;display:none;z-index:9;max-width:90%}
+#toast.bad{background:var(--red)}
+</style>
+</head>
+<body>
+<div class="wrap" id="app"><p class="muted">Loading…</p></div>
+<script>
+window.BDC_API = "https://script.google.com/macros/s/AKfycbw5_UqMs_EDmCYyHhJ3QOLKLtVAJs0E-26_RENfbA2DT2wjOTQc5GMYuEBmx4ypYXENEg/exec";
+const LOGO = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAIAAABMXPacAAAEhUlEQVR42u2dvYskRRiHf29V9fY4vcHthyCKJnufi5rIsMt6geYihwcGsolykWJiYLjBZgoeyImCCAZGogjiv3Aieh4mHoqpmKgzG7h9O73bVa/BXKDgzs1OTff02r8n7Rn646nq+ur3LemvraP5WKuDQefay9nuDryHtf/9M+9hbb6zO/zoY1lehvfNvzOHU4QxSBJYC2OO8wRjjj3azHvCqUN1mkMUQCiAAggFUAChAAogFEABhAIogFAABVAAoQAKIBTQUtxsVgqNQAFBdWvCcG7StUZj4BycrfB6RgRFCPMWIKJ5juIQAmiVi/L9vu7nk/xW93P9408ErXxRPl2QbjdyHdRFln3N76bPP+d6T8H7ClfDRXQ4dE8+ca+Ajyn7QHr1ij23Jp1OhUvEIcDa8vYPxZdfSbcbUw8iBQiGw+TZZ9IXX6jvrSky/lByeSu5vFXDhRyeOVN8+hmyrAGvoNKj9HC2yvvVST85CQEhoNIWwHtYq3k+rjTU2giPHn21Ak7UKai4dycY93kSu6EcBxAKoABCARRAKIACCAVQAKEACiAUQAGEAiiAoIGB2iHUHeIrRoQC/rGKJawBc+OgKH/5bQ/1KRConntkqZs6BaTNAkJQY+TOr4Pea58gMdC6vqs4LL95b3vz/EMhqJ1r5WtEDRAARsRIPbkeRESb0QCwF0QBFMBHQAEUQCiAAggFoJ1TEdZGRQ5ZC2npNA5E7j2BGAG6txfxb6v9gRZFSwUUhQ4GEImJhXKd7Zcw9WSIMfpX7i5euE/gyv+y7APmwvnOtVdkMZs+RCmoy66/NZtrsm1qTowBkGxtJlub0W1AUcDFhuq1tBnQ6DDVsnTxzUh7GTXCcQrZDeU4gAIIBVAAoQAKIJjHZJz3UcMo1fbOx6nGPj3vHdKUxXD6gVjkJIK1Lt/ZnT7phDHYzxeuXkk2egjhdO2eg8h8QcaUt24Xn3+BLGYyLrjhBx9GTUf/3jdnzyYbPQRtUYOiCsD/eOfgnXdldSVqOlqWl2MEQEUeaOtLLE3lwVVZWooSEJVYTYCyRNCWClBFWcL7mGfIbijHARRAKIACCAVQAEGLoyRFRKSuEDHRxsweNkJAUA3FEUKtQXqhGZsPuyaEB196dPnmje1a40WDPv7YShPikxtRAxY7ydPrD2NeAZoUoPNIVWCYquBfqbDbmqqA3VAKoABCARRAKIACCAVQAKEACiAUQAGEAiiAUAD4VQQmilYYfSEsFX+KfKLtbKXi7WxHJ5q/AFXJsmYlnKhhO1trAUiWxW/a7WJ3te+kRze/RnkEHyrMWCOiReEuXXQbPageW7pVIVJ+e6v86WdJ02q3NDfm6LvvEX0W6a+txz6auwc4LKoucdrvd15/dfH626PdrMdsdL3/xpvDG+/LSlTk0EQsLEi3GylgJq+gLhazyqu8iEy2e7tkmazGRg7VlC9oZo1wDZTlpCcKIT5yiN1QjgMIBVAAoQAKIBRAAYQCKIBQAAUQCqAAQgEUQCiAAjDXDXROfAjMloIZpQq+36I89DRlcfwbDItjV7PWZA4AAAAASUVORK5CYII=';
+</script>
+<script>
+// Copyright (c) 2009 Kazuhiko Arase
+// Licensed under the MIT license:
+var qrcode=function(){var t=function(t,r){var e=t,n=g[r],o=null,i=0,a=null,u=[],f={},c=function(t,r){o=function(t){for(var r=new Array(t),e=0;e<t;e+=1){r[e]=new Array(t);for(var n=0;n<t;n+=1)r[e][n]=null}return r}(i=4*e+17),l(0,0),l(i-7,0),l(0,i-7),s(),h(),d(t,r),e>=7&&v(t),null==a&&(a=p(e,n,u)),w(a,r)},l=function(t,r){for(var e=-1;e<=7;e+=1)if(!(t+e<=-1||i<=t+e))for(var n=-1;n<=7;n+=1)r+n<=-1||i<=r+n||(o[t+e][r+n]=0<=e&&e<=6&&(0==n||6==n)||0<=n&&n<=6&&(0==e||6==e)||2<=e&&e<=4&&2<=n&&n<=4)},h=function(){for(var t=8;t<i-8;t+=1)null==o[t][6]&&(o[t][6]=t%2==0);for(var r=8;r<i-8;r+=1)null==o[6][r]&&(o[6][r]=r%2==0)},s=function(){for(var t=B.getPatternPosition(e),r=0;r<t.length;r+=1)for(var n=0;n<t.length;n+=1){var i=t[r],a=t[n];if(null==o[i][a])for(var u=-2;u<=2;u+=1)for(var f=-2;f<=2;f+=1)o[i+u][a+f]=-2==u||2==u||-2==f||2==f||0==u&&0==f}},v=function(t){for(var r=B.getBCHTypeNumber(e),n=0;n<18;n+=1){var a=!t&&1==(r>>n&1);o[Math.floor(n/3)][n%3+i-8-3]=a}for(n=0;n<18;n+=1){a=!t&&1==(r>>n&1);o[n%3+i-8-3][Math.floor(n/3)]=a}},d=function(t,r){for(var e=n<<3|r,a=B.getBCHTypeInfo(e),u=0;u<15;u+=1){var f=!t&&1==(a>>u&1);u<6?o[u][8]=f:u<8?o[u+1][8]=f:o[i-15+u][8]=f}for(u=0;u<15;u+=1){f=!t&&1==(a>>u&1);u<8?o[8][i-u-1]=f:u<9?o[8][15-u-1+1]=f:o[8][15-u-1]=f}o[i-8][8]=!t},w=function(t,r){for(var e=-1,n=i-1,a=7,u=0,f=B.getMaskFunction(r),c=i-1;c>0;c-=2)for(6==c&&(c-=1);;){for(var g=0;g<2;g+=1)if(null==o[n][c-g]){var l=!1;u<t.length&&(l=1==(t[u]>>>a&1)),f(n,c-g)&&(l=!l),o[n][c-g]=l,-1==(a-=1)&&(u+=1,a=7)}if((n+=e)<0||i<=n){n-=e,e=-e;break}}},p=function(t,r,e){for(var n=A.getRSBlocks(t,r),o=b(),i=0;i<e.length;i+=1){var a=e[i];o.put(a.getMode(),4),o.put(a.getLength(),B.getLengthInBits(a.getMode(),t)),a.write(o)}var u=0;for(i=0;i<n.length;i+=1)u+=n[i].dataCount;if(o.getLengthInBits()>8*u)throw"code length overflow. ("+o.getLengthInBits()+">"+8*u+")";for(o.getLengthInBits()+4<=8*u&&o.put(0,4);o.getLengthInBits()%8!=0;)o.putBit(!1);for(;!(o.getLengthInBits()>=8*u||(o.put(236,8),o.getLengthInBits()>=8*u));)o.put(17,8);return function(t,r){for(var e=0,n=0,o=0,i=new Array(r.length),a=new Array(r.length),u=0;u<r.length;u+=1){var f=r[u].dataCount,c=r[u].totalCount-f;n=Math.max(n,f),o=Math.max(o,c),i[u]=new Array(f);for(var g=0;g<i[u].length;g+=1)i[u][g]=255&t.getBuffer()[g+e];e+=f;var l=B.getErrorCorrectPolynomial(c),h=k(i[u],l.getLength()-1).mod(l);for(a[u]=new Array(l.getLength()-1),g=0;g<a[u].length;g+=1){var s=g+h.getLength()-a[u].length;a[u][g]=s>=0?h.getAt(s):0}}var v=0;for(g=0;g<r.length;g+=1)v+=r[g].totalCount;var d=new Array(v),w=0;for(g=0;g<n;g+=1)for(u=0;u<r.length;u+=1)g<i[u].length&&(d[w]=i[u][g],w+=1);for(g=0;g<o;g+=1)for(u=0;u<r.length;u+=1)g<a[u].length&&(d[w]=a[u][g],w+=1);return d}(o,n)};f.addData=function(t,r){var e=null;switch(r=r||"Byte"){case"Numeric":e=M(t);break;case"Alphanumeric":e=x(t);break;case"Byte":e=m(t);break;case"Kanji":e=L(t);break;default:throw"mode:"+r}u.push(e),a=null},f.isDark=function(t,r){if(t<0||i<=t||r<0||i<=r)throw t+","+r;return o[t][r]},f.getModuleCount=function(){return i},f.make=function(){if(e<1){for(var t=1;t<40;t++){for(var r=A.getRSBlocks(t,n),o=b(),i=0;i<u.length;i++){var a=u[i];o.put(a.getMode(),4),o.put(a.getLength(),B.getLengthInBits(a.getMode(),t)),a.write(o)}var g=0;for(i=0;i<r.length;i++)g+=r[i].dataCount;if(o.getLengthInBits()<=8*g)break}e=t}c(!1,function(){for(var t=0,r=0,e=0;e<8;e+=1){c(!0,e);var n=B.getLostPoint(f);(0==e||t>n)&&(t=n,r=e)}return r}())},f.createTableTag=function(t,r){t=t||2;var e="";e+='<table style="',e+=" border-width: 0px; border-style: none;",e+=" border-collapse: collapse;",e+=" padding: 0px; margin: "+(r=void 0===r?4*t:r)+"px;",e+='">',e+="<tbody>";for(var n=0;n<f.getModuleCount();n+=1){e+="<tr>";for(var o=0;o<f.getModuleCount();o+=1)e+='<td style="',e+=" border-width: 0px; border-style: none;",e+=" border-collapse: collapse;",e+=" padding: 0px; margin: 0px;",e+=" width: "+t+"px;",e+=" height: "+t+"px;",e+=" background-color: ",e+=f.isDark(n,o)?"#000000":"#ffffff",e+=";",e+='"/>';e+="</tr>"}return e+="</tbody>",e+="</table>"},f.createSvgTag=function(t,r,e,n){var o={};"object"==typeof arguments[0]&&(t=(o=arguments[0]).cellSize,r=o.margin,e=o.alt,n=o.title),t=t||2,r=void 0===r?4*t:r,(e="string"==typeof e?{text:e}:e||{}).text=e.text||null,e.id=e.text?e.id||"qrcode-description":null,(n="string"==typeof n?{text:n}:n||{}).text=n.text||null,n.id=n.text?n.id||"qrcode-title":null;var i,a,u,c,g=f.getModuleCount()*t+2*r,l="";for(c="l"+t+",0 0,"+t+" -"+t+",0 0,-"+t+"z ",l+='<svg version="1.1" xmlns="http://www.w3.org/2000/svg"',l+=o.scalable?"":' width="'+g+'px" height="'+g+'px"',l+=' viewBox="0 0 '+g+" "+g+'" ',l+=' preserveAspectRatio="xMinYMin meet"',l+=n.text||e.text?' role="img" aria-labelledby="'+y([n.id,e.id].join(" ").trim())+'"':"",l+=">",l+=n.text?'<title id="'+y(n.id)+'">'+y(n.text)+"</title>":"",l+=e.text?'<description id="'+y(e.id)+'">'+y(e.text)+"</description>":"",l+='<rect width="100%" height="100%" fill="white" cx="0" cy="0"/>',l+='<path d="',a=0;a<f.getModuleCount();a+=1)for(u=a*t+r,i=0;i<f.getModuleCount();i+=1)f.isDark(a,i)&&(l+="M"+(i*t+r)+","+u+c);return l+='" stroke="transparent" fill="black"/>',l+="</svg>"},f.createDataURL=function(t,r){t=t||2,r=void 0===r?4*t:r;var e=f.getModuleCount()*t+2*r,n=r,o=e-r;return I(e,e,function(r,e){if(n<=r&&r<o&&n<=e&&e<o){var i=Math.floor((r-n)/t),a=Math.floor((e-n)/t);return f.isDark(a,i)?0:1}return 1})},f.createImgTag=function(t,r,e){t=t||2,r=void 0===r?4*t:r;var n=f.getModuleCount()*t+2*r,o="";return o+="<img",o+=' src="',o+=f.createDataURL(t,r),o+='"',o+=' width="',o+=n,o+='"',o+=' height="',o+=n,o+='"',e&&(o+=' alt="',o+=y(e),o+='"'),o+="/>"};var y=function(t){for(var r="",e=0;e<t.length;e+=1){var n=t.charAt(e);switch(n){case"<":r+="&lt;";break;case">":r+="&gt;";break;case"&":r+="&amp;";break;case'"':r+="&quot;";break;default:r+=n}}return r};return f.createASCII=function(t,r){if((t=t||1)<2)return function(t){t=void 0===t?2:t;var r,e,n,o,i,a=1*f.getModuleCount()+2*t,u=t,c=a-t,g={"██":"█","█ ":"▀"," █":"▄","  ":" "},l={"██":"▀","█ ":"▀"," █":" ","  ":" "},h="";for(r=0;r<a;r+=2){for(n=Math.floor((r-u)/1),o=Math.floor((r+1-u)/1),e=0;e<a;e+=1)i="█",u<=e&&e<c&&u<=r&&r<c&&f.isDark(n,Math.floor((e-u)/1))&&(i=" "),u<=e&&e<c&&u<=r+1&&r+1<c&&f.isDark(o,Math.floor((e-u)/1))?i+=" ":i+="█",h+=t<1&&r+1>=c?l[i]:g[i];h+="\n"}return a%2&&t>0?h.substring(0,h.length-a-1)+Array(a+1).join("▀"):h.substring(0,h.length-1)}(r);t-=1,r=void 0===r?2*t:r;var e,n,o,i,a=f.getModuleCount()*t+2*r,u=r,c=a-r,g=Array(t+1).join("██"),l=Array(t+1).join("  "),h="",s="";for(e=0;e<a;e+=1){for(o=Math.floor((e-u)/t),s="",n=0;n<a;n+=1)i=1,u<=n&&n<c&&u<=e&&e<c&&f.isDark(o,Math.floor((n-u)/t))&&(i=0),s+=i?g:l;for(o=0;o<t;o+=1)h+=s+"\n"}return h.substring(0,h.length-1)},f.renderTo2dContext=function(t,r){r=r||2;for(var e=f.getModuleCount(),n=0;n<e;n++)for(var o=0;o<e;o++)t.fillStyle=f.isDark(n,o)?"black":"white",t.fillRect(n*r,o*r,r,r)},f};t.stringToBytes=(t.stringToBytesFuncs={default:function(t){for(var r=[],e=0;e<t.length;e+=1){var n=t.charCodeAt(e);r.push(255&n)}return r}}).default,t.createStringToBytes=function(t,r){var e=function(){for(var e=S(t),n=function(){var t=e.read();if(-1==t)throw"eof";return t},o=0,i={};;){var a=e.read();if(-1==a)break;var u=n(),f=n()<<8|n();i[String.fromCharCode(a<<8|u)]=f,o+=1}if(o!=r)throw o+" != "+r;return i}(),n="?".charCodeAt(0);return function(t){for(var r=[],o=0;o<t.length;o+=1){var i=t.charCodeAt(o);if(i<128)r.push(i);else{var a=e[t.charAt(o)];"number"==typeof a?(255&a)==a?r.push(a):(r.push(a>>>8),r.push(255&a)):r.push(n)}}return r}};var r,e,n,o,i,a=1,u=2,f=4,c=8,g={L:1,M:0,Q:3,H:2},l=0,h=1,s=2,v=3,d=4,w=5,p=6,y=7,B=(r=[[],[6,18],[6,22],[6,26],[6,30],[6,34],[6,22,38],[6,24,42],[6,26,46],[6,28,50],[6,30,54],[6,32,58],[6,34,62],[6,26,46,66],[6,26,48,70],[6,26,50,74],[6,30,54,78],[6,30,56,82],[6,30,58,86],[6,34,62,90],[6,28,50,72,94],[6,26,50,74,98],[6,30,54,78,102],[6,28,54,80,106],[6,32,58,84,110],[6,30,58,86,114],[6,34,62,90,118],[6,26,50,74,98,122],[6,30,54,78,102,126],[6,26,52,78,104,130],[6,30,56,82,108,134],[6,34,60,86,112,138],[6,30,58,86,114,142],[6,34,62,90,118,146],[6,30,54,78,102,126,150],[6,24,50,76,102,128,154],[6,28,54,80,106,132,158],[6,32,58,84,110,136,162],[6,26,54,82,110,138,166],[6,30,58,86,114,142,170]],e=1335,n=7973,i=function(t){for(var r=0;0!=t;)r+=1,t>>>=1;return r},(o={}).getBCHTypeInfo=function(t){for(var r=t<<10;i(r)-i(e)>=0;)r^=e<<i(r)-i(e);return 21522^(t<<10|r)},o.getBCHTypeNumber=function(t){for(var r=t<<12;i(r)-i(n)>=0;)r^=n<<i(r)-i(n);return t<<12|r},o.getPatternPosition=function(t){return r[t-1]},o.getMaskFunction=function(t){switch(t){case l:return function(t,r){return(t+r)%2==0};case h:return function(t,r){return t%2==0};case s:return function(t,r){return r%3==0};case v:return function(t,r){return(t+r)%3==0};case d:return function(t,r){return(Math.floor(t/2)+Math.floor(r/3))%2==0};case w:return function(t,r){return t*r%2+t*r%3==0};case p:return function(t,r){return(t*r%2+t*r%3)%2==0};case y:return function(t,r){return(t*r%3+(t+r)%2)%2==0};default:throw"bad maskPattern:"+t}},o.getErrorCorrectPolynomial=function(t){for(var r=k([1],0),e=0;e<t;e+=1)r=r.multiply(k([1,C.gexp(e)],0));return r},o.getLengthInBits=function(t,r){if(1<=r&&r<10)switch(t){case a:return 10;case u:return 9;case f:case c:return 8;default:throw"mode:"+t}else if(r<27)switch(t){case a:return 12;case u:return 11;case f:return 16;case c:return 10;default:throw"mode:"+t}else{if(!(r<41))throw"type:"+r;switch(t){case a:return 14;case u:return 13;case f:return 16;case c:return 12;default:throw"mode:"+t}}},o.getLostPoint=function(t){for(var r=t.getModuleCount(),e=0,n=0;n<r;n+=1)for(var o=0;o<r;o+=1){for(var i=0,a=t.isDark(n,o),u=-1;u<=1;u+=1)if(!(n+u<0||r<=n+u))for(var f=-1;f<=1;f+=1)o+f<0||r<=o+f||0==u&&0==f||a==t.isDark(n+u,o+f)&&(i+=1);i>5&&(e+=3+i-5)}for(n=0;n<r-1;n+=1)for(o=0;o<r-1;o+=1){var c=0;t.isDark(n,o)&&(c+=1),t.isDark(n+1,o)&&(c+=1),t.isDark(n,o+1)&&(c+=1),t.isDark(n+1,o+1)&&(c+=1),0!=c&&4!=c||(e+=3)}for(n=0;n<r;n+=1)for(o=0;o<r-6;o+=1)t.isDark(n,o)&&!t.isDark(n,o+1)&&t.isDark(n,o+2)&&t.isDark(n,o+3)&&t.isDark(n,o+4)&&!t.isDark(n,o+5)&&t.isDark(n,o+6)&&(e+=40);for(o=0;o<r;o+=1)for(n=0;n<r-6;n+=1)t.isDark(n,o)&&!t.isDark(n+1,o)&&t.isDark(n+2,o)&&t.isDark(n+3,o)&&t.isDark(n+4,o)&&!t.isDark(n+5,o)&&t.isDark(n+6,o)&&(e+=40);var g=0;for(o=0;o<r;o+=1)for(n=0;n<r;n+=1)t.isDark(n,o)&&(g+=1);return e+=Math.abs(100*g/r/r-50)/5*10},o),C=function(){for(var t=new Array(256),r=new Array(256),e=0;e<8;e+=1)t[e]=1<<e;for(e=8;e<256;e+=1)t[e]=t[e-4]^t[e-5]^t[e-6]^t[e-8];for(e=0;e<255;e+=1)r[t[e]]=e;var n={glog:function(t){if(t<1)throw"glog("+t+")";return r[t]},gexp:function(r){for(;r<0;)r+=255;for(;r>=256;)r-=255;return t[r]}};return n}();function k(t,r){if(void 0===t.length)throw t.length+"/"+r;var e=function(){for(var e=0;e<t.length&&0==t[e];)e+=1;for(var n=new Array(t.length-e+r),o=0;o<t.length-e;o+=1)n[o]=t[o+e];return n}(),n={getAt:function(t){return e[t]},getLength:function(){return e.length},multiply:function(t){for(var r=new Array(n.getLength()+t.getLength()-1),e=0;e<n.getLength();e+=1)for(var o=0;o<t.getLength();o+=1)r[e+o]^=C.gexp(C.glog(n.getAt(e))+C.glog(t.getAt(o)));return k(r,0)},mod:function(t){if(n.getLength()-t.getLength()<0)return n;for(var r=C.glog(n.getAt(0))-C.glog(t.getAt(0)),e=new Array(n.getLength()),o=0;o<n.getLength();o+=1)e[o]=n.getAt(o);for(o=0;o<t.getLength();o+=1)e[o]^=C.gexp(C.glog(t.getAt(o))+r);return k(e,0).mod(t)}};return n}var A=function(){var t=[[1,26,19],[1,26,16],[1,26,13],[1,26,9],[1,44,34],[1,44,28],[1,44,22],[1,44,16],[1,70,55],[1,70,44],[2,35,17],[2,35,13],[1,100,80],[2,50,32],[2,50,24],[4,25,9],[1,134,108],[2,67,43],[2,33,15,2,34,16],[2,33,11,2,34,12],[2,86,68],[4,43,27],[4,43,19],[4,43,15],[2,98,78],[4,49,31],[2,32,14,4,33,15],[4,39,13,1,40,14],[2,121,97],[2,60,38,2,61,39],[4,40,18,2,41,19],[4,40,14,2,41,15],[2,146,116],[3,58,36,2,59,37],[4,36,16,4,37,17],[4,36,12,4,37,13],[2,86,68,2,87,69],[4,69,43,1,70,44],[6,43,19,2,44,20],[6,43,15,2,44,16],[4,101,81],[1,80,50,4,81,51],[4,50,22,4,51,23],[3,36,12,8,37,13],[2,116,92,2,117,93],[6,58,36,2,59,37],[4,46,20,6,47,21],[7,42,14,4,43,15],[4,133,107],[8,59,37,1,60,38],[8,44,20,4,45,21],[12,33,11,4,34,12],[3,145,115,1,146,116],[4,64,40,5,65,41],[11,36,16,5,37,17],[11,36,12,5,37,13],[5,109,87,1,110,88],[5,65,41,5,66,42],[5,54,24,7,55,25],[11,36,12,7,37,13],[5,122,98,1,123,99],[7,73,45,3,74,46],[15,43,19,2,44,20],[3,45,15,13,46,16],[1,135,107,5,136,108],[10,74,46,1,75,47],[1,50,22,15,51,23],[2,42,14,17,43,15],[5,150,120,1,151,121],[9,69,43,4,70,44],[17,50,22,1,51,23],[2,42,14,19,43,15],[3,141,113,4,142,114],[3,70,44,11,71,45],[17,47,21,4,48,22],[9,39,13,16,40,14],[3,135,107,5,136,108],[3,67,41,13,68,42],[15,54,24,5,55,25],[15,43,15,10,44,16],[4,144,116,4,145,117],[17,68,42],[17,50,22,6,51,23],[19,46,16,6,47,17],[2,139,111,7,140,112],[17,74,46],[7,54,24,16,55,25],[34,37,13],[4,151,121,5,152,122],[4,75,47,14,76,48],[11,54,24,14,55,25],[16,45,15,14,46,16],[6,147,117,4,148,118],[6,73,45,14,74,46],[11,54,24,16,55,25],[30,46,16,2,47,17],[8,132,106,4,133,107],[8,75,47,13,76,48],[7,54,24,22,55,25],[22,45,15,13,46,16],[10,142,114,2,143,115],[19,74,46,4,75,47],[28,50,22,6,51,23],[33,46,16,4,47,17],[8,152,122,4,153,123],[22,73,45,3,74,46],[8,53,23,26,54,24],[12,45,15,28,46,16],[3,147,117,10,148,118],[3,73,45,23,74,46],[4,54,24,31,55,25],[11,45,15,31,46,16],[7,146,116,7,147,117],[21,73,45,7,74,46],[1,53,23,37,54,24],[19,45,15,26,46,16],[5,145,115,10,146,116],[19,75,47,10,76,48],[15,54,24,25,55,25],[23,45,15,25,46,16],[13,145,115,3,146,116],[2,74,46,29,75,47],[42,54,24,1,55,25],[23,45,15,28,46,16],[17,145,115],[10,74,46,23,75,47],[10,54,24,35,55,25],[19,45,15,35,46,16],[17,145,115,1,146,116],[14,74,46,21,75,47],[29,54,24,19,55,25],[11,45,15,46,46,16],[13,145,115,6,146,116],[14,74,46,23,75,47],[44,54,24,7,55,25],[59,46,16,1,47,17],[12,151,121,7,152,122],[12,75,47,26,76,48],[39,54,24,14,55,25],[22,45,15,41,46,16],[6,151,121,14,152,122],[6,75,47,34,76,48],[46,54,24,10,55,25],[2,45,15,64,46,16],[17,152,122,4,153,123],[29,74,46,14,75,47],[49,54,24,10,55,25],[24,45,15,46,46,16],[4,152,122,18,153,123],[13,74,46,32,75,47],[48,54,24,14,55,25],[42,45,15,32,46,16],[20,147,117,4,148,118],[40,75,47,7,76,48],[43,54,24,22,55,25],[10,45,15,67,46,16],[19,148,118,6,149,119],[18,75,47,31,76,48],[34,54,24,34,55,25],[20,45,15,61,46,16]],r=function(t,r){var e={};return e.totalCount=t,e.dataCount=r,e},e={};return e.getRSBlocks=function(e,n){var o=function(r,e){switch(e){case g.L:return t[4*(r-1)+0];case g.M:return t[4*(r-1)+1];case g.Q:return t[4*(r-1)+2];case g.H:return t[4*(r-1)+3];default:return}}(e,n);if(void 0===o)throw"bad rs block @ typeNumber:"+e+"/errorCorrectionLevel:"+n;for(var i=o.length/3,a=[],u=0;u<i;u+=1)for(var f=o[3*u+0],c=o[3*u+1],l=o[3*u+2],h=0;h<f;h+=1)a.push(r(c,l));return a},e}(),b=function(){var t=[],r=0,e={getBuffer:function(){return t},getAt:function(r){var e=Math.floor(r/8);return 1==(t[e]>>>7-r%8&1)},put:function(t,r){for(var n=0;n<r;n+=1)e.putBit(1==(t>>>r-n-1&1))},getLengthInBits:function(){return r},putBit:function(e){var n=Math.floor(r/8);t.length<=n&&t.push(0),e&&(t[n]|=128>>>r%8),r+=1}};return e},M=function(t){var r=a,e=t,n={getMode:function(){return r},getLength:function(t){return e.length},write:function(t){for(var r=e,n=0;n+2<r.length;)t.put(o(r.substring(n,n+3)),10),n+=3;n<r.length&&(r.length-n==1?t.put(o(r.substring(n,n+1)),4):r.length-n==2&&t.put(o(r.substring(n,n+2)),7))}},o=function(t){for(var r=0,e=0;e<t.length;e+=1)r=10*r+i(t.charAt(e));return r},i=function(t){if("0"<=t&&t<="9")return t.charCodeAt(0)-"0".charCodeAt(0);throw"illegal char :"+t};return n},x=function(t){var r=u,e=t,n={getMode:function(){return r},getLength:function(t){return e.length},write:function(t){for(var r=e,n=0;n+1<r.length;)t.put(45*o(r.charAt(n))+o(r.charAt(n+1)),11),n+=2;n<r.length&&t.put(o(r.charAt(n)),6)}},o=function(t){if("0"<=t&&t<="9")return t.charCodeAt(0)-"0".charCodeAt(0);if("A"<=t&&t<="Z")return t.charCodeAt(0)-"A".charCodeAt(0)+10;switch(t){case" ":return 36;case"$":return 37;case"%":return 38;case"*":return 39;case"+":return 40;case"-":return 41;case".":return 42;case"/":return 43;case":":return 44;default:throw"illegal char :"+t}};return n},m=function(r){var e=f,n=t.stringToBytes(r),o={getMode:function(){return e},getLength:function(t){return n.length},write:function(t){for(var r=0;r<n.length;r+=1)t.put(n[r],8)}};return o},L=function(r){var e=c,n=t.stringToBytesFuncs.SJIS;if(!n)throw"sjis not supported.";!function(){var t=n("友");if(2!=t.length||38726!=(t[0]<<8|t[1]))throw"sjis not supported."}();var o=n(r),i={getMode:function(){return e},getLength:function(t){return~~(o.length/2)},write:function(t){for(var r=o,e=0;e+1<r.length;){var n=(255&r[e])<<8|255&r[e+1];if(33088<=n&&n<=40956)n-=33088;else{if(!(57408<=n&&n<=60351))throw"illegal char at "+(e+1)+"/"+n;n-=49472}n=192*(n>>>8&255)+(255&n),t.put(n,13),e+=2}if(e<r.length)throw"illegal char at "+(e+1)}};return i},D=function(){var t=[],r={writeByte:function(r){t.push(255&r)},writeShort:function(t){r.writeByte(t),r.writeByte(t>>>8)},writeBytes:function(t,e,n){e=e||0,n=n||t.length;for(var o=0;o<n;o+=1)r.writeByte(t[o+e])},writeString:function(t){for(var e=0;e<t.length;e+=1)r.writeByte(t.charCodeAt(e))},toByteArray:function(){return t},toString:function(){var r="";r+="[";for(var e=0;e<t.length;e+=1)e>0&&(r+=","),r+=t[e];return r+="]"}};return r},S=function(t){var r=t,e=0,n=0,o=0,i={read:function(){for(;o<8;){if(e>=r.length){if(0==o)return-1;throw"unexpected end of file./"+o}var t=r.charAt(e);if(e+=1,"="==t)return o=0,-1;t.match(/^\s$/)||(n=n<<6|a(t.charCodeAt(0)),o+=6)}var i=n>>>o-8&255;return o-=8,i}},a=function(t){if(65<=t&&t<=90)return t-65;if(97<=t&&t<=122)return t-97+26;if(48<=t&&t<=57)return t-48+52;if(43==t)return 62;if(47==t)return 63;throw"c:"+t};return i},I=function(t,r,e){for(var n=function(t,r){var e=t,n=r,o=new Array(t*r),i={setPixel:function(t,r,n){o[r*e+t]=n},write:function(t){t.writeString("GIF87a"),t.writeShort(e),t.writeShort(n),t.writeByte(128),t.writeByte(0),t.writeByte(0),t.writeByte(0),t.writeByte(0),t.writeByte(0),t.writeByte(255),t.writeByte(255),t.writeByte(255),t.writeString(","),t.writeShort(0),t.writeShort(0),t.writeShort(e),t.writeShort(n),t.writeByte(0);var r=a(2);t.writeByte(2);for(var o=0;r.length-o>255;)t.writeByte(255),t.writeBytes(r,o,255),o+=255;t.writeByte(r.length-o),t.writeBytes(r,o,r.length-o),t.writeByte(0),t.writeString(";")}},a=function(t){for(var r=1<<t,e=1+(1<<t),n=t+1,i=u(),a=0;a<r;a+=1)i.add(String.fromCharCode(a));i.add(String.fromCharCode(r)),i.add(String.fromCharCode(e));var f,c,g,l=D(),h=(f=l,c=0,g=0,{write:function(t,r){if(t>>>r!=0)throw"length over";for(;c+r>=8;)f.writeByte(255&(t<<c|g)),r-=8-c,t>>>=8-c,g=0,c=0;g|=t<<c,c+=r},flush:function(){c>0&&f.writeByte(g)}});h.write(r,n);var s=0,v=String.fromCharCode(o[s]);for(s+=1;s<o.length;){var d=String.fromCharCode(o[s]);s+=1,i.contains(v+d)?v+=d:(h.write(i.indexOf(v),n),i.size()<4095&&(i.size()==1<<n&&(n+=1),i.add(v+d)),v=d)}return h.write(i.indexOf(v),n),h.write(e,n),h.flush(),l.toByteArray()},u=function(){var t={},r=0,e={add:function(n){if(e.contains(n))throw"dup key:"+n;t[n]=r,r+=1},size:function(){return r},indexOf:function(r){return t[r]},contains:function(r){return void 0!==t[r]}};return e};return i}(t,r),o=0;o<r;o+=1)for(var i=0;i<t;i+=1)n.setPixel(i,o,e(i,o));var a=D();n.write(a);for(var u=function(){var t=0,r=0,e=0,n="",o={},i=function(t){n+=String.fromCharCode(a(63&t))},a=function(t){if(t<0);else{if(t<26)return 65+t;if(t<52)return t-26+97;if(t<62)return t-52+48;if(62==t)return 43;if(63==t)return 47}throw"n:"+t};return o.writeByte=function(n){for(t=t<<8|255&n,r+=8,e+=1;r>=6;)i(t>>>r-6),r-=6},o.flush=function(){if(r>0&&(i(t<<6-r),t=0,r=0),e%3!=0)for(var o=3-e%3,a=0;a<o;a+=1)n+="="},o.toString=function(){return n},o}(),f=a.toByteArray(),c=0;c<f.length;c+=1)u.writeByte(f[c]);return u.flush(),"data:image/gif;base64,"+u};return t}();qrcode.stringToBytesFuncs["UTF-8"]=function(t){return function(t){for(var r=[],e=0;e<t.length;e++){var n=t.charCodeAt(e);n<128?r.push(n):n<2048?r.push(192|n>>6,128|63&n):n<55296||n>=57344?r.push(224|n>>12,128|n>>6&63,128|63&n):(e++,n=65536+((1023&n)<<10|1023&t.charCodeAt(e)),r.push(240|n>>18,128|n>>12&63,128|n>>6&63,128|63&n))}return r}(t)},function(t){"function"==typeof define&&define.amd?define([],t):"object"==typeof exports&&(module.exports=t())}(function(){return qrcode});
+</script>
+<script>
+const CRC_T = (() => { const t = new Uint32Array(256); for (let n = 0; n < 256; n++) { let c = n; for (let k = 0; k < 8; k++) c = c & 1 ? 0xEDB88320 ^ (c >>> 1) : c >>> 1; t[n] = c >>> 0; } return t; })();
+function crc32(b) { let c = 0xFFFFFFFF; for (let i = 0; i < b.length; i++) c = CRC_T[(c ^ b[i]) & 255] ^ (c >>> 8); return (c ^ 0xFFFFFFFF) >>> 0; }
+function zipStore(files) {
+  const enc = new TextEncoder(), parts = [], central = []; let off = 0;
+  files.forEach(f => {
+    const name = enc.encode(f.name), data = enc.encode(f.data), crc = crc32(data);
+    const h = new DataView(new ArrayBuffer(30));
+    h.setUint32(0, 0x04034b50, true); h.setUint16(4, 20, true); h.setUint16(6, 0x0800, true); h.setUint16(8, 0, true);
+    h.setUint16(10, 0, true); h.setUint16(12, 0x21, true); h.setUint32(14, crc, true); h.setUint32(18, data.length, true);
+    h.setUint32(22, data.length, true); h.setUint16(26, name.length, true); h.setUint16(28, 0, true);
+    parts.push(new Uint8Array(h.buffer), name, data);
+    const c = new DataView(new ArrayBuffer(46));
+    c.setUint32(0, 0x02014b50, true); c.setUint16(4, 20, true); c.setUint16(6, 20, true); c.setUint16(8, 0x0800, true); c.setUint16(10, 0, true);
+    c.setUint16(12, 0, true); c.setUint16(14, 0x21, true); c.setUint32(16, crc, true); c.setUint32(20, data.length, true); c.setUint32(24, data.length, true);
+    c.setUint16(28, name.length, true); c.setUint32(42, off, true);
+    central.push(new Uint8Array(c.buffer), name);
+    off += 30 + name.length + data.length;
+  });
+  const cdSize = central.reduce((n, a) => n + a.length, 0);
+  const e = new DataView(new ArrayBuffer(22));
+  e.setUint32(0, 0x06054b50, true); e.setUint16(8, files.length, true); e.setUint16(10, files.length, true);
+  e.setUint32(12, cdSize, true); e.setUint32(16, off, true);
+  return new Blob(parts.concat(central, [new Uint8Array(e.buffer)]), { type: 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet' });
+}
+const XH = '<' + '?xml version="1.0" encoding="UTF-8" standalone="yes"?' + '>';
+function xmlEsc(v) { return String(v == null ? '' : v).replace(/[\u0000-\u0008\u000B\u000C\u000E-\u001F]/g, '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;'); }
+function colName(i) { let s = ''; i++; while (i > 0) { const m = (i - 1) % 26; s = String.fromCharCode(65 + m) + s; i = Math.floor((i - 1) / 26); } return s; }
+function buildXlsx(sheets) {
+  const files = [], names = [], used = {};
+  sheets.forEach((s, si) => {
+    let n = (s.name || 'Camp').replace(/[\[\]:*?\/\\]/g, ' ').slice(0, 31).trim() || 'Camp', k = 2;
+    while (used[n.toLowerCase()]) n = n.slice(0, 26) + ' (' + (k++) + ')';
+    used[n.toLowerCase()] = 1; names.push(n);
+    const widths = s.rows[0].map((h, j) => Math.min(40, s.rows.reduce((m, r) => Math.max(m, String(r[j] == null ? '' : r[j]).length), 8) + 2));
+    const rowsXml = s.rows.map((r, i) => '<row r="' + (i + 1) + '">' + r.map((v, j) => {
+      const ref = colName(j) + (i + 1); v = v == null ? '' : String(v);
+      if (i > 0 && s.num[j] && /^-?\d+(\.\d+)?$/.test(v)) return '<c r="' + ref + '"><v>' + v + '</v></c>';
+      return '<c r="' + ref + '" t="inlineStr"' + (i === 0 ? ' s="1"' : '') + '><is><t xml:space="preserve">' + xmlEsc(v) + '</t></is></c>';
+    }).join('') + '</row>').join('');
+    files.push({ name: 'xl/worksheets/sheet' + (si + 1) + '.xml', data: XH + '<worksheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main"><sheetViews><sheetView workbookViewId="0"><pane ySplit="1" topLeftCell="A2" activePane="bottomLeft" state="frozen"/></sheetView></sheetViews><cols>' + widths.map((w, j) => '<col min="' + (j + 1) + '" max="' + (j + 1) + '" width="' + w + '" customWidth="1"/>').join('') + '</cols><sheetData>' + rowsXml + '</sheetData></worksheet>' });
+  });
+  files.unshift(
+    { name: '[Content_Types].xml', data: XH + '<Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types"><Default Extension="rels" ContentType="application/vnd.openxmlformats-package.relationships+xml"/><Default Extension="xml" ContentType="application/xml"/><Override PartName="/xl/workbook.xml" ContentType="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet.main+xml"/><Override PartName="/xl/styles.xml" ContentType="application/vnd.openxmlformats-officedocument.spreadsheetml.styles+xml"/>' + names.map((n, i) => '<Override PartName="/xl/worksheets/sheet' + (i + 1) + '.xml" ContentType="application/vnd.openxmlformats-officedocument.spreadsheetml.worksheet+xml"/>').join('') + '</Types>' },
+    { name: '_rels/.rels', data: XH + '<Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Id="rId1" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/officeDocument" Target="xl/workbook.xml"/></Relationships>' },
+    { name: 'xl/workbook.xml', data: XH + '<workbook xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships"><sheets>' + names.map((n, i) => '<sheet name="' + xmlEsc(n) + '" sheetId="' + (i + 1) + '" r:id="rId' + (i + 1) + '"/>').join('') + '</sheets></workbook>' },
+    { name: 'xl/_rels/workbook.xml.rels', data: XH + '<Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships">' + names.map((n, i) => '<Relationship Id="rId' + (i + 1) + '" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/worksheet" Target="worksheets/sheet' + (i + 1) + '.xml"/>').join('') + '<Relationship Id="rId' + (names.length + 1) + '" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/styles" Target="styles.xml"/></Relationships>' },
+    { name: 'xl/styles.xml', data: XH + '<styleSheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main"><fonts count="2"><font><sz val="11"/><name val="Calibri"/></font><font><b/><sz val="11"/><name val="Calibri"/></font></fonts><fills count="2"><fill><patternFill patternType="none"/></fill><fill><patternFill patternType="gray125"/></fill></fills><borders count="1"><border><left/><right/><top/><bottom/><diagonal/></border></borders><cellStyleXfs count="1"><xf numFmtId="0" fontId="0" fillId="0" borderId="0"/></cellStyleXfs><cellXfs count="2"><xf numFmtId="0" fontId="0" fillId="0" borderId="0" xfId="0"/><xf numFmtId="0" fontId="1" fillId="0" borderId="0" xfId="0" applyFont="1"/></cellXfs><cellStyles count="1"><cellStyle name="Normal" xfId="0" builtinId="0"/></cellStyles></styleSheet>' }
+  );
+  return zipStore(files);
+}
+function saveBlob(blob, fileName) {
+  const url = URL.createObjectURL(blob), a = document.createElement('a');
+  a.href = url; a.download = fileName; a.style.display = 'none'; document.body.appendChild(a); a.click();
+  setTimeout(() => { URL.revokeObjectURL(url); a.remove(); }, 4000);
+}
+
+</script>
+<script>
+/* ===== Blood Donation Camp app v2 (GitHub Pages front end) ===== */
+const API = window.BDC_API;
+const Q = new URLSearchParams(location.search);
+const CAMP = Q.get('c') || '', POSTER = Q.get('poster') === '1';
+const BASE = location.origin + location.pathname;
+const TN = { text: 'Text', number: 'Number', date: 'Date', tel: 'Mobile', email: 'Email', select: 'List', check: 'Yes/No' };
+const LOCKED = ['fn', 'ln', 'name', 'con', 'st'];
+const $ = id => document.getElementById(id);
+const esc = s => String(s == null ? '' : s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+const app = $('app');
+
+async function api(action, ...args) {
+  let r;
+  try {
+    r = await fetch(API, { method: 'POST', redirect: 'follow', headers: { 'Content-Type': 'text/plain;charset=utf-8' }, body: JSON.stringify({ action, args }) });
+  } catch (e) { throw new Error('No connection. Check your internet and try again.'); }
+  if (!r.ok) throw new Error('Server error (' + r.status + '). Try again in a moment.');
+  let j;
+  try { j = await r.json(); } catch (e) { throw new Error('Unexpected reply from server. Try again.'); }
+  if (!j.ok) throw new Error(j.error || 'Something went wrong.');
+  return j.data;
+}
+const store = {
+  mem: {},
+  get(k) { try { return localStorage.getItem(k); } catch (e) { return this.mem[k] || null; } },
+  set(k, v) { try { localStorage.setItem(k, v); } catch (e) { this.mem[k] = v; } },
+  del(k) { try { localStorage.removeItem(k); } catch (e) { delete this.mem[k]; } }
+};
+function brand(collab, size) {
+  return `<div class="brand"><img src="${LOGO}" alt="HDFC Bank logo" style="${size ? 'width:' + size + 'px;height:' + size + 'px' : ''}"><div class="grow"><div class="org">HDFC BANK LIMITED</div>${collab != null ? `<div class="col">in collaboration with ${esc(collab || '—')}</div>` : ''}</div></div>`;
+}
+function dmyToIso(v) { const m = /^(\d{2})-(\d{2})-(\d{4})$/.exec(v || ''); return m ? `${m[3]}-${m[2]}-${m[1]}` : ''; }
+function fullName(e) { return e.fn != null || e.ln != null ? ((e.fn || '') + ' ' + (e.ln || '')).trim() : (e.name || ''); }
+function checkValue(f, v, requireIt) {
+  v = v == null ? '' : String(v).trim();
+  if (f.t === 'check') return requireIt && f.r && v !== 'Yes' ? 'Required' : '';
+  if (!v) return requireIt && f.r ? 'Required' : '';
+  if (f.t === 'number') {
+    if (!/^-?\d+(\.\d+)?$/.test(v)) return 'Enter a number';
+    const x = Number(v);
+    if (f.min !== '' && f.min != null && x < f.min) return 'Must be ' + f.min + ' or more';
+    if (f.max !== '' && f.max != null && x > f.max) return 'Must be ' + f.max + ' or less';
+  }
+  if (f.t === 'tel' && v.replace(/\D/g, '').length !== 10) return 'Enter a 10-digit mobile number';
+  if (f.t === 'email' && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v)) return 'Enter a valid email';
+  return '';
+}
+function rangeText(f) {
+  if (f.t !== 'number') return '';
+  const a = f.min !== '' && f.min != null, b = f.max !== '' && f.max != null;
+  if (a && b) return f.min + '–' + f.max;
+  if (a) return f.min + ' or more';
+  if (b) return 'up to ' + f.max;
+  return '';
+}
+function inputHtml(f, id, value, ph) {
+  value = value == null ? '' : value;
+  if (f.t === 'check') return `<label class="chk"><input type="checkbox" id="${id}" ${value === 'Yes' ? 'checked' : ''}> <span>${esc(f.l)}${f.r ? ' *' : ''}</span></label>`;
+  if (f.t === 'select') return `<select id="${id}"><option value="">${ph ? esc(ph) : 'Select'}</option>${f.o.map(o => `<option ${o === value ? 'selected' : ''}>${esc(o)}</option>`).join('')}</select>`;
+  const extra = f.t === 'number' ? `inputmode="decimal" ${f.min !== '' && f.min != null ? 'min="' + f.min + '"' : ''} ${f.max !== '' && f.max != null ? 'max="' + f.max + '"' : ''}` :
+    f.t === 'tel' ? 'inputmode="numeric" maxlength="10"' : f.t === 'email' ? 'autocomplete="email"' : '';
+  return `<input id="${id}" type="${f.t === 'tel' ? 'tel' : f.t}" value="${esc(value)}" ${ph ? 'placeholder="' + esc(ph) + '"' : f.t === 'tel' ? 'placeholder="10-digit mobile"' : ''} ${extra}>`;
+}
+function fieldHtml(f, id, value) {
+  const r = rangeText(f);
+  if (f.t === 'check') return `<div class="field">${inputHtml(f, id, value)}<div class="err" id="${id}_e"></div></div>`;
+  return `<div class="field"><label class="lb" for="${id}">${esc(f.l)}${f.r ? ' *' : ''}${r ? ` <span style="color:var(--faint)">(${esc(r)})</span>` : ''}</label>${inputHtml(f, id, value)}<div class="err" id="${id}_e"></div></div>`;
+}
+function readField(f, id) { const el = $(id); if (!el) return ''; return f.t === 'check' ? (el.checked ? 'Yes' : '') : el.value.trim(); }
+function clearOnInput(id) { const el = $(id); if (!el) return; ['input', 'change'].forEach(ev => el.addEventListener(ev, () => { const e = $(id + '_e'); if (e) e.textContent = ''; })); }
+function copyText(text, btn) {
+  const done = () => { const o = btn.textContent; btn.textContent = 'Copied'; setTimeout(() => btn.textContent = o, 1500); };
+  const fallback = () => { const t = document.createElement('textarea'); t.value = text; document.body.appendChild(t); t.select(); try { document.execCommand('copy'); done(); } catch (e) { prompt('Copy this link', text); } t.remove(); };
+  if (navigator.clipboard) navigator.clipboard.writeText(text).then(done, fallback); else fallback();
+}
+function qrSvg(text, cell) { try { const q = qrcode(0, 'M'); q.addData(text); q.make(); return q.createSvgTag(cell || 6, 2); } catch (e) { return '<p class="muted">QR could not be created. Use the link.</p>'; } }
+function campLink(id) { return BASE + '?c=' + encodeURIComponent(id); }
+
+/* ================= Donor form ================= */
+let FORM = null;
+async function donorView() {
+  app.innerHTML = '<p class="muted">Loading…</p>';
+  try { FORM = await api('getForm', CAMP); } catch (e) { app.innerHTML = `<div class="card">${brand(null)}<p style="margin-top:14px">${esc(e.message)}</p><button onclick="location.reload()">Try again</button></div>`; return; }
+  if (FORM.error) { app.innerHTML = `<div class="card">${brand(null)}<p style="margin-top:14px">${esc(FORM.error)}</p></div>`; return; }
+  if (POSTER) return posterView();
+  const head = `<div class="card">${brand(FORM.collab)}<div class="row" style="margin-top:14px"><span class="drop" aria-hidden="true">&#x1FA78;</span><b>Blood donation camp</b></div><div class="muted">${esc(FORM.date)}${FORM.venue ? ' · ' + esc(FORM.venue) : ''}</div></div>`;
+  if (FORM.status !== 'Open') { app.innerHTML = head + `<div class="card">Registration for this camp is closed. Thank you for your interest.</div>`; return; }
+  app.innerHTML = head + `<div class="card">${FORM.cols.map(f => fieldHtml(f, 'f_' + f.k)).join('')}
+    <div id="dupbox" class="hide" style="background:var(--amber-bg);color:var(--amber);border-radius:8px;padding:10px;margin-bottom:10px;font-size:14px"></div>
+    <div class="err" id="ferr"></div><button class="primary full" id="fsub">Submit</button></div>`;
+  FORM.cols.forEach(f => clearOnInput('f_' + f.k));
+  $('fsub').onclick = () => donorSubmit(false);
+}
+async function donorSubmit(force) {
+  const data = {}; let bad = false;
+  FORM.cols.forEach(f => { const v = readField(f, 'f_' + f.k); data[f.k] = v; const m = checkValue(f, v, true); $('f_' + f.k + '_e').textContent = m; if (m) bad = true; });
+  if (bad) { $('ferr').textContent = 'Fix the highlighted fields.'; return; }
+  $('ferr').textContent = '';
+  const btn = $('fsub'); btn.disabled = true; btn.textContent = 'Submitting…';
+  try {
+    const r = await api('submitEntry', CAMP, data, force);
+    if (r.ok) {
+      app.innerHTML = `<div class="card">${brand(FORM.collab)}</div><div class="card" style="text-align:center">
+        <div style="font-size:40px" aria-hidden="true">&#x2705;</div><h2 style="margin:6px 0">Registration complete</h2>
+        <p class="muted" style="margin:0">Your token number</p><div style="font-size:44px;font-weight:700;color:var(--blue)">${esc(r.token)}</div>
+        <p>Please show this number at the registration desk. Thank you for donating blood.</p>
+        <button class="full" id="again">Register another donor</button></div>`;
+      $('again').onclick = donorView; return;
+    }
+    if (r.duplicate) {
+      const box = $('dupbox'); box.classList.remove('hide');
+      box.innerHTML = `${esc(r.message)} If this is a different person using the same number, submit anyway.<div class="row" style="margin-top:8px"><button id="dupyes">Submit anyway</button></div>`;
+      $('dupyes').onclick = () => { box.classList.add('hide'); donorSubmit(true); };
+    }
+    if (r.errors) Object.keys(r.errors).forEach(k => { const e = $('f_' + k + '_e'); if (e) e.textContent = r.errors[k]; });
+  } catch (e) { $('ferr').textContent = e.message; }
+  btn.disabled = false; btn.textContent = 'Submit';
+}
+function posterView() {
+  const link = campLink(CAMP);
+  app.innerHTML = `<div class="card poster">${brand(FORM.collab, 56)}
+    <h2 style="font-size:24px;margin:18px 0 4px"><span class="drop" aria-hidden="true">&#x1FA78;</span> Blood donation camp</h2>
+    <div style="font-size:17px">${esc(FORM.date)}${FORM.venue ? ' · ' + esc(FORM.venue) : ''}</div>
+    <div id="qr">${qrSvg(link, 8)}</div><div style="font-size:18px;font-weight:600">Scan to register as a donor</div>
+    <p class="muted" style="word-break:break-all">${esc(link)}</p>
+    <div class="row noprint" style="justify-content:center"><button class="primary" onclick="window.print()">Print poster</button></div></div>`;
+}
+
+/* ================= Staff sign-in ================= */
+let TOKEN = store.get('bdc2_token'), ME = null, TAB = 'team';
+async function staffView() {
+  if (TOKEN) {
+    app.innerHTML = '<p class="muted">Loading…</p>';
+    try { ME = await api('whoami', TOKEN); return homeView(); } catch (e) { if (e.message !== 'SESSION_EXPIRED') { app.innerHTML = `<div class="card">${esc(e.message)} <button onclick="location.reload()">Try again</button></div>`; return; } TOKEN = null; store.del('bdc2_token'); }
+  }
+  loginView();
+}
+function loginView(msg) {
+  app.innerHTML = `<div class="card">${brand(null)}<h2>Staff sign in</h2><p class="muted" style="margin-top:0">Enter your Gmail ID. We'll email you a 6-digit code.</p>
+    ${msg ? `<p class="err">${esc(msg)}</p>` : ''}
+    <div class="field"><label class="lb" for="le">Gmail ID</label><input id="le" type="email" autocomplete="email" placeholder="name@gmail.com" value="${esc(store.get('bdc2_email') || '')}"></div>
+    <div id="codebox" class="field hide"><label class="lb" for="lc">Sign-in code</label><input id="lc" inputmode="numeric" maxlength="6" placeholder="6-digit code"></div>
+    <div class="err" id="lerr"></div><button class="primary full" id="lbtn">Send code</button><p class="muted" id="lhint"></p></div>`;
+  let stage = 'email';
+  ['le', 'lc'].forEach(id => $(id).addEventListener('input', () => $('lerr').textContent = ''));
+  $('lbtn').onclick = async () => {
+    const email = $('le').value.trim().toLowerCase(), btn = $('lbtn');
+    btn.disabled = true;
+    try {
+      if (stage === 'email') {
+        btn.textContent = 'Sending…';
+        await api('requestCode', email); store.set('bdc2_email', email);
+        stage = 'code'; $('codebox').classList.remove('hide'); $('le').disabled = true;
+        btn.textContent = 'Sign in'; $('lhint').innerHTML = 'Code sent. Check your inbox (and spam). <a href="#" id="lback">Use a different ID</a>';
+        $('lback').onclick = ev => { ev.preventDefault(); loginView(); }; $('lc').focus();
+      } else {
+        btn.textContent = 'Signing in…';
+        const r = await api('verifyCode', email, $('lc').value.trim());
+        TOKEN = r.token; ME = r.me; store.set('bdc2_token', TOKEN); homeView(); return;
+      }
+    } catch (e) { $('lerr').textContent = e.message; btn.textContent = stage === 'email' ? 'Send code' : 'Sign in'; }
+    btn.disabled = false;
+  };
+}
+function handleErr(e, el) {
+  if (e && e.message === 'SESSION_EXPIRED') { TOKEN = null; store.del('bdc2_token'); stopPoll(); loginView('Your session ended. Sign in again.'); return; }
+  if (el) el.textContent = e.message; else toast(e.message, true);
+}
+function toast(msg, bad) {
+  let t = $('toast'); if (!t) { t = document.createElement('div'); t.id = 'toast'; document.body.appendChild(t); }
+  t.textContent = msg; t.className = bad ? 'bad' : ''; t.style.display = 'block';
+  clearTimeout(t._h); t._h = setTimeout(() => t.style.display = 'none', 3000);
+}
+
+/* ================= Staff home ================= */
+function isAdmin() { return ME && (ME.role === 'Admin' || ME.role === 'Owner'); }
+function homeView() {
+  if (!isAdmin()) TAB = 'team';
+  app.innerHTML = `<div class="card" style="padding:12px 16px">${brand(null, 36)}<div class="row" style="margin-top:8px"><span class="muted grow ell">${esc(ME.email)}</span><span class="pill ${ME.role === 'Team' ? 'p-violet' : 'p-blue'}">${esc(ME.role)}</span><button class="ib" id="so">Sign out</button></div></div>
+    ${isAdmin() ? `<div class="tabs"><button id="tt" class="${TAB === 'team' ? 'on' : ''}">Team screen</button><button id="ta" class="${TAB === 'admin' ? 'on' : ''}">Admin</button></div>` : ''}
+    <div id="view"></div>`;
+  $('so').onclick = async () => { stopPoll(); try { await api('signOut', TOKEN); } catch (e) { } TOKEN = null; store.del('bdc2_token'); loginView(); };
+  if (isAdmin()) { $('tt').onclick = () => { TAB = 'team'; homeView(); }; $('ta').onclick = () => { TAB = 'admin'; homeView(); }; }
+  TAB === 'admin' ? adminView() : teamView();
+}
+
+/* ================= Team screen ================= */
+let T = { camps: [], camp: store.get('bdc2_camp') || '', data: null, q: '', filter: 'pending', expanded: null, editing: false }, pollTimer = null;
+function stopPoll() { if (pollTimer) clearInterval(pollTimer); pollTimer = null; }
+async function teamView() {
+  stopPoll();
+  const v = $('view'); v.innerHTML = '<p class="muted">Loading camps…</p>';
+  try { T.camps = await api('getTeamCamps', TOKEN); } catch (e) { return handleErr(e, v); }
+  if (!T.camps.length) { v.innerHTML = '<div class="card">No camps yet. An admin needs to create one.</div>'; return; }
+  if (!T.camps.some(c => c.id === T.camp)) T.camp = T.camps[0].id;
+  v.innerHTML = `<div class="card"><label class="lb" for="tc">Camp</label><select id="tc">${T.camps.map(c => `<option value="${c.id}" ${c.id === T.camp ? 'selected' : ''}>${esc(c.dateLabel)}${c.venue ? ' · ' + esc(c.venue) : ''}${c.status !== 'Open' ? ' (closed)' : ''}</option>`).join('')}</select>
+    <div class="g2" style="margin-top:12px" id="tstats"></div>
+    <div class="seg" id="tf" style="margin-top:12px"><button data-f="pending">Status not updated</button><button data-f="all">All records</button></div>
+    <input id="tq" placeholder="Search name or mobile" style="margin-top:10px" value="${esc(T.q)}">
+    <div id="tlist" style="margin-top:6px"><p class="muted">Loading donors…</p></div>
+    <button class="full" id="txl" style="margin-top:12px">&#x2B07; Download Excel</button>
+    <p class="muted" style="margin-bottom:0">Updates every 20 seconds. Every change records who made it and when.</p></div>`;
+  $('tc').onchange = () => { T.camp = $('tc').value; store.set('bdc2_camp', T.camp); T.expanded = null; loadEntries(); };
+  $('tq').oninput = () => { T.q = $('tq').value; drawEntries(); };
+  document.querySelectorAll('#tf button').forEach(b => b.onclick = () => { T.filter = b.dataset.f; drawEntries(); });
+  $('txl').onclick = () => downloadExcel(T.camp, $('txl'));
+  await loadEntries();
+  pollTimer = setInterval(() => { if (!T.editing && $('tlist')) loadEntries(true); }, 20000);
+}
+async function loadEntries(silent) {
+  try { T.data = await api('getEntries', TOKEN, T.camp); } catch (e) { if (silent) return; return handleErr(e, $('tlist')); }
+  if (silent && T.editing) return;
+  drawEntries();
+}
+function teamCols() { return T.data.camp.cols.filter(f => f.by === 't' && f.k !== 'st'); }
+function drawEntries() {
+  if (!T.data || !$('tlist')) return;
+  const all = T.data.entries, pend = all.filter(e => !e.st).length, c = T.data.counts;
+  $('tstats').innerHTML = `<div class="stat"><div class="t">Registered / pending</div><div class="n">${c.total} / ${pend}</div></div><div class="stat"><div class="t">Successful / rejected</div><div class="n">${c.successful} / ${c.rejected}</div></div>`;
+  document.querySelectorAll('#tf button').forEach(b => { b.classList.toggle('on', b.dataset.f === T.filter); b.textContent = b.dataset.f === 'pending' ? `Status not updated (${pend})` : `All records (${all.length})`; });
+  const cols = T.data.camp.cols, has = k => cols.some(f => f.k === k), q = T.q.trim().toLowerCase();
+  const rows = all.filter(e => (T.filter === 'all' || !e.st) && (!q || fullName(e).toLowerCase().includes(q) || String(e.mob || '').includes(q) || String(e._tok) === q));
+  if (!rows.length) { $('tlist').innerHTML = `<p class="muted">${!all.length ? 'No donors registered yet.' : T.filter === 'pending' && !q ? 'All donors have a status. Switch to All records to see them.' : 'No donors match your search.'}</p>`; return; }
+  const tc = teamCols(), donorCols = cols.filter(f => f.by === 'd' && !['fn', 'ln', 'name'].includes(f.k));
+  $('tlist').innerHTML = rows.map(e => {
+    const tok = esc(e._tok), sub = [has('mob') ? e.mob : '', has('bg') ? (e.bg || 'Blood group not given') : ''].filter(Boolean).map(esc).join(' · ');
+    return `<div class="drow" data-tok="${tok}">
+      <div class="row"><span class="pill p-blue">#${tok}</span><div class="grow" style="cursor:pointer" data-x="${tok}"><div class="ell" style="font-weight:600">${esc(fullName(e))}</div><div class="muted ell">${sub} <span style="color:var(--blue)">${T.expanded === String(e._tok) ? '▲ less' : '▼ details'}</span></div></div>
+      <button class="sbtn ${e.st === 'Successful' ? 's' : ''}" data-st="Successful" data-tok="${tok}">Successful</button><button class="sbtn ${e.st === 'Rejected' ? 'r' : ''}" data-st="Rejected" data-tok="${tok}">Rejected</button></div>
+      ${T.expanded === String(e._tok) ? `<div class="muted" style="margin:6px 0 0 4px">${donorCols.map(f => `${esc(f.l)}: <b style="color:var(--text);font-weight:500">${esc(e[f.k] || '-')}</b>`).join(' · ')}<br>Submitted ${esc(e._at)}</div>` : ''}
+      ${tc.map(f => { const v = f.t === 'date' ? dmyToIso(e[f.k]) : (e[f.k] || ''); return `<div class="rmk"><span aria-hidden="true">&#x1F4AC;</span>${inputHtml(f, 'u_' + tok + '_' + f.k, v, f.l)}<span class="saved" id="s_${tok}_${f.k}"></span></div>`; }).join('')}
+      ${e._by ? `<div class="upd">Last updated by ${esc(e._by)} · ${esc(e._upd)}</div>` : ''}</div>`;
+  }).join('');
+  document.querySelectorAll('#tlist [data-x]').forEach(el => el.onclick = () => { T.expanded = T.expanded === el.dataset.x ? null : el.dataset.x; drawEntries(); });
+  document.querySelectorAll('#tlist .sbtn').forEach(b => b.onclick = () => setStatus(b.dataset.tok, b.dataset.st, b));
+  rows.forEach(e => tc.forEach(f => {
+    const id = 'u_' + e._tok + '_' + f.k, el = $(id); if (!el) return;
+    el.addEventListener('focus', () => T.editing = true);
+    const save = () => { T.editing = false; saveTeamField(String(e._tok), f, el); };
+    if (f.t === 'select' || f.t === 'check' || f.t === 'date') el.addEventListener('change', save);
+    else { el.addEventListener('blur', save); el.addEventListener('keydown', ev => { if (ev.key === 'Enter') el.blur(); }); }
+  }));
+}
+async function setStatus(tok, value, btn) {
+  const e = T.data.entries.find(x => String(x._tok) === tok); if (!e) return;
+  const nv = e.st === value ? '' : value, old = e.st;
+  e.st = nv; recount(); drawEntries();
+  try { const r = await api('updateEntry', TOKEN, T.camp, tok, { st: nv }); e._by = r.by; e._upd = r.at; drawEntries(); toast(nv ? fullName(e) + ': ' + nv : fullName(e) + ': status cleared'); }
+  catch (err) { e.st = old; recount(); drawEntries(); handleErr(err); }
+}
+async function saveTeamField(tok, f, el) {
+  const e = T.data.entries.find(x => String(x._tok) === tok); if (!e) return;
+  const v = f.t === 'check' ? (el.checked ? 'Yes' : '') : el.value.trim();
+  const cur = f.t === 'date' ? dmyToIso(e[f.k]) : (e[f.k] || '');
+  if (v === cur) return;
+  const mark = $('s_' + tok + '_' + f.k); if (mark) { mark.textContent = 'Saving…'; mark.style.color = 'var(--muted)'; }
+  try {
+    const r = await api('updateEntry', TOKEN, T.camp, tok, { [f.k]: v });
+    e[f.k] = f.t === 'date' && v ? v.split('-').reverse().join('-') : v; e._by = r.by; e._upd = r.at;
+    const m = $('s_' + tok + '_' + f.k); if (m) { m.textContent = 'Saved ✓'; m.style.color = 'var(--green)'; setTimeout(() => { if (m) m.textContent = ''; }, 1800); }
+    const row = document.querySelector(`#tlist .drow[data-tok="${CSS.escape(tok)}"]`);
+    if (row) { let u = row.querySelector('.upd'); if (!u) { u = document.createElement('div'); u.className = 'upd'; row.appendChild(u); } u.textContent = 'Last updated by ' + r.by + ' · ' + r.at; }
+  } catch (err) { const m = $('s_' + tok + '_' + f.k); if (m) { m.textContent = 'Not saved'; m.style.color = 'var(--red)'; } handleErr(err); }
+}
+function recount() { const c = { total: 0, successful: 0, rejected: 0, pending: 0 }; T.data.entries.forEach(e => { c.total++; if (e.st === 'Successful') c.successful++; else if (e.st === 'Rejected') c.rejected++; else c.pending++; }); T.data.counts = c; }
+
+/* ================= Excel ================= */
+async function downloadExcel(campId, btn) {
+  const label = btn.innerHTML; btn.disabled = true; btn.textContent = 'Preparing Excel…';
+  try {
+    const d = await api('getExport', TOKEN, campId);
+    saveBlob(buildXlsx(d.sheets), d.fileName);
+    btn.textContent = 'Downloaded';
+    setTimeout(() => { btn.innerHTML = label; btn.disabled = false; }, 1500);
+    return;
+  } catch (e) { handleErr(e); }
+  btn.innerHTML = label; btn.disabled = false;
+}
+
+/* ================= Admin ================= */
+let A = null, E = null;
+async function adminView(msg, newId) {
+  stopPoll();
+  const v = $('view'); v.innerHTML = '<p class="muted">Loading…</p>';
+  try { A = await api('getAdminData', TOKEN); } catch (e) { return handleErr(e, v); }
+  E = null;
+  const nc = newId ? A.camps.find(c => c.id === newId) : null;
+  v.innerHTML = `${msg ? `<div class="card okmsg" style="margin-top:0">${esc(msg)}</div>` : ''}
+    ${nc ? `<div class="card"><b>Camp published: ${esc(nc.dateLabel)}${nc.venue ? ' · ' + esc(nc.venue) : ''}</b>
+      <div class="row" style="margin-top:10px;align-items:flex-start"><div class="qrbox">${qrSvg(campLink(nc.id), 3)}</div><div class="grow"><div class="muted" style="word-break:break-all">${esc(campLink(nc.id))}</div>
+      <div class="row" style="flex-wrap:wrap;margin-top:8px"><a class="btn ib" href="${esc(campLink(nc.id))}&poster=1" target="_blank" rel="noopener">Print poster</a><button class="ib" id="ncopy">Copy link</button></div></div></div></div>` : ''}
+    <h2>Camps</h2><div class="card" id="camps"></div>
+    <h2>Staff access</h2><div class="card" id="staff"></div>
+    <p class="muted">All data is saved in your Google Sheet: <a href="${esc(A.ssUrl)}" target="_blank" rel="noopener">open data sheet</a>.</p>`;
+  if (nc) $('ncopy').onclick = () => copyText(campLink(nc.id), $('ncopy'));
+  drawCamps(); drawStaff();
+}
+function drawCamps() {
+  const box = $('camps');
+  box.innerHTML = `<button class="primary full" id="newc">+ New camp</button>${A.camps.length ? '<button class="full" id="xall" style="margin-top:8px">Download all camps (Excel)</button>' : ''}` + (A.camps.length ? A.camps.map(c => {
+    const link = campLink(c.id), cnt = c.counts;
+    return `<div class="list-row" style="flex-wrap:wrap"><div class="grow" style="min-width:60%"><div style="font-weight:600">${esc(c.dateLabel)}${c.venue ? ' · ' + esc(c.venue) : ''}</div>
+      <div class="muted ell">with ${esc(c.collab)}${cnt ? ` · ${cnt.total} registered · ${cnt.successful} successful · ${cnt.pending} pending` : ''}</div></div>
+      <span class="pill ${c.status === 'Open' ? 'p-green' : ''}">${esc(c.status)}</span>
+      <div class="row" style="width:100%;flex-wrap:wrap;margin-top:6px">
+        <button class="ib" data-a="edit" data-id="${c.id}">Edit</button>
+        <a class="btn ib" href="${esc(link)}&poster=1" target="_blank" rel="noopener">QR poster</a>
+        <button class="ib" data-a="copy" data-link="${esc(link)}">Copy form link</button>
+        <button class="ib" data-a="xlsx" data-id="${c.id}">Download Excel</button>
+        <a class="btn ib" href="${esc(A.ssUrl)}#gid=${c.sheetId}" target="_blank" rel="noopener">Sheet tab</a>
+        <button class="ib" data-a="status" data-id="${c.id}" data-s="${c.status === 'Open' ? 'Closed' : 'Open'}">${c.status === 'Open' ? 'Close registration' : 'Reopen'}</button>
+      </div></div>`;
+  }).join('') : '<p class="muted" style="margin-bottom:0">No camps yet.</p>');
+  $('newc').onclick = () => campEditor(null);
+  if ($('xall')) $('xall').onclick = () => downloadExcel('ALL', $('xall'));
+  box.querySelectorAll('[data-a]').forEach(b => b.onclick = async () => {
+    const a = b.dataset.a;
+    if (a === 'edit') campEditor(A.camps.find(c => c.id === b.dataset.id));
+    if (a === 'copy') copyText(b.dataset.link, b);
+    if (a === 'xlsx') downloadExcel(b.dataset.id, b);
+    if (a === 'status') { b.disabled = true; try { await api('setCampStatus', TOKEN, b.dataset.id, b.dataset.s); adminView(); } catch (e) { handleErr(e); b.disabled = false; } }
+  });
+}
+function newKey() { return 'c' + Date.now().toString(36) + Math.random().toString(36).slice(2, 5); }
+function campEditor(c) {
+  E = c ? { id: c.id, collab: c.collab, date: c.date, venue: c.venue, cols: JSON.parse(JSON.stringify(c.cols)) }
+    : { id: '', collab: '', date: '', venue: '', cols: JSON.parse(JSON.stringify(A.defaultCols)) };
+  E.open = -1;
+  $('view').innerHTML = `<h2>${c ? 'Edit camp' : 'New camp'}</h2>
+    <div class="card"><span class="lb">Form header</span>${brand(null, 36)}
+      <div class="field" style="margin-top:12px"><label class="lb" for="ec">In collaboration with *</label><input id="ec" value="${esc(E.collab)}" placeholder="TATA Institute of Social Sciences"></div>
+      <div class="g2"><div><label class="lb" for="ed">Camp date *</label><input id="ed" type="date" value="${esc(E.date)}"></div><div><label class="lb" for="ev">Venue</label><input id="ev" value="${esc(E.venue)}" placeholder="Deonar Govandi"></div></div></div>
+    <h2>Columns</h2>
+    <div class="card"><p class="muted" style="margin-top:0">&#8593;&#8595; reorder · &#9998; rules · &#128274; can't be removed · <span class="pill p-blue">Donor</span> public form · <span class="pill p-violet">Team</span> staff only${c ? '<br>Removing a column that already has data keeps that data at the end of the sheet tab, marked [Removed].' : ''}</p>
+      <div id="clist"></div><button class="full" id="cadd" style="margin-top:10px">+ Add column</button></div>
+    <div class="err" id="eerr2"></div>
+    <div class="row" style="margin-top:8px"><button class="primary" id="esave" style="flex:2">${c ? 'Save changes' : 'Create camp and get QR'}</button><button id="ecancel" style="flex:1">Cancel</button></div>
+    <button class="full" id="edef" style="margin-top:8px">Save these columns as default for new camps</button><p class="okmsg" id="edefok"></p>`;
+  drawCols();
+  $('cadd').onclick = () => {
+    if (E.open > -1 && E.cols[E.open]._new) return;
+    const at = E.cols.findIndex(f => f.by === 't'); const p = at < 0 ? E.cols.length : at;
+    E.cols.splice(p, 0, { k: newKey(), l: '', t: 'text', r: 0, by: 'd', min: '', max: '', _new: 1 }); E.open = p; drawCols(); $('cl').focus();
+  };
+  $('ecancel').onclick = () => adminView();
+  const gather = () => ({ id: E.id, collab: $('ec').value.trim(), date: $('ed').value, venue: $('ev').value.trim(), cols: E.cols.filter(f => !f._new) });
+  $('esave').onclick = async () => {
+    const d = gather();
+    if (!d.collab) { $('eerr2').textContent = 'Enter the collaborating organisation.'; return; }
+    if (!d.date) { $('eerr2').textContent = 'Set the camp date.'; return; }
+    const b = $('esave'); b.disabled = true; b.textContent = 'Saving…';
+    try { const r = await api('saveCamp', TOKEN, d); adminView(c ? 'Camp updated.' : 'Camp created.', c ? null : r.id); }
+    catch (e) { b.disabled = false; b.textContent = c ? 'Save changes' : 'Create camp and get QR'; handleErr(e, $('eerr2')); }
+  };
+  $('edef').onclick = async () => {
+    try { await api('saveDefaultCols', TOKEN, gather().cols); A.defaultCols = gather().cols; $('edefok').textContent = 'Saved. New camps will start with these columns.'; setTimeout(() => { if ($('edefok')) $('edefok').textContent = ''; }, 3000); }
+    catch (e) { handleErr(e, $('eerr2')); }
+  };
+  ['ec', 'ed', 'ev'].forEach(id => $(id).addEventListener('input', () => $('eerr2').textContent = ''));
+}
+function colRule(f) { const r = rangeText(f); if (r) return r; if (f.t === 'tel') return '10 digits'; if (f.t === 'select') return f.o.length + ' options'; return ''; }
+function colExtra(t, f) {
+  if (t === 'number') return `<span class="lb">Allowed range</span><div class="g2" style="margin-bottom:10px"><input id="cmin" type="number" placeholder="Min" value="${f.min ?? ''}"><input id="cmax" type="number" placeholder="Max" value="${f.max ?? ''}"></div>`;
+  if (t === 'select') return `<span class="lb">Options, one per line</span><textarea id="co" rows="5" style="margin-bottom:10px">${esc((f.o || []).join('\n'))}</textarea>`;
+  return '';
+}
+function drawCols() {
+  const L = E.cols;
+  $('clist').innerHTML = L.map((f, i) => {
+    const lock = LOCKED.includes(f.k), r = colRule(f);
+    let h = `<div class="list-row"><button class="ib" data-mv="${i}" data-d="-1" ${i ? '' : 'disabled'} aria-label="Move up">&#8593;</button><button class="ib" data-mv="${i}" data-d="1" ${i < L.length - 1 ? '' : 'disabled'} aria-label="Move down">&#8595;</button>
+      <div class="grow ell">${esc(f.l || 'New column')}${f.r && f.by === 'd' ? ' <span style="color:var(--red)">*</span>' : ''}</div>${r ? `<span class="pill">${esc(r)}</span>` : ''}<span class="pill ${f.by === 't' ? 'p-violet' : 'p-blue'}">${f.by === 't' ? 'Team' : 'Donor'}</span>
+      <button class="ib" data-ed="${i}" aria-label="Edit">&#9998;</button>${lock ? '<span class="ib" title="Required column" style="color:var(--faint)">&#128274;</span>' : `<button class="ib danger" data-rm="${i}" aria-label="Remove">&#10005;</button>`}</div>`;
+    if (E.open === i) {
+      const LK = lock ? 'disabled' : '';
+      h += `<div class="panel"><div class="field"><label class="lb" for="cl">Column name</label><input id="cl" value="${esc(f.l)}" placeholder="Hemoglobin level"></div>
+        <div class="g2" style="margin-bottom:10px"><div><span class="lb">Type</span><select id="ct" ${LK}>${Object.keys(TN).map(k => `<option value="${k}" ${k === f.t ? 'selected' : ''}>${TN[k]}</option>`).join('')}</select></div>
+        <div><span class="lb">Filled by</span><select id="cb" ${LK}><option value="d" ${f.by === 'd' ? 'selected' : ''}>Donor</option><option value="t" ${f.by === 't' ? 'selected' : ''}>Team</option></select></div></div>
+        <label class="chk" style="margin-bottom:10px"><input type="checkbox" id="cr" ${f.r ? 'checked' : ''} ${LK}> <span>Required for donor</span></label>
+        <div id="cx">${colExtra(f.t, f)}</div><div class="err" id="cerr"></div>
+        <div class="row"><button class="primary" id="cok" style="flex:1">Save column</button><button id="ccn" style="flex:1">Cancel</button></div></div>`;
+    }
+    return h;
+  }).join('');
+  $('clist').querySelectorAll('[data-mv]').forEach(b => b.onclick = () => {
+    const i = +b.dataset.mv, j = i + (+b.dataset.d); if (j < 0 || j >= L.length) return;
+    [L[i], L[j]] = [L[j], L[i]]; if (E.open === i) E.open = j; else if (E.open === j) E.open = i; drawCols();
+  });
+  $('clist').querySelectorAll('[data-ed]').forEach(b => b.onclick = () => {
+    let i = +b.dataset.ed;
+    if (E.open > -1 && L[E.open]._new && E.open !== i) { L.splice(E.open, 1); if (i > E.open) i--; }
+    E.open = E.open === i ? -1 : i; drawCols();
+  });
+  $('clist').querySelectorAll('[data-rm]').forEach(b => b.onclick = () => { L.splice(+b.dataset.rm, 1); E.open = -1; drawCols(); });
+  if (E.open > -1) {
+    const f = L[E.open];
+    $('ct').onchange = () => { $('cx').innerHTML = colExtra($('ct').value, { min: '', max: '', o: [] }); };
+    $('ccn').onclick = () => { if (f._new) L.splice(E.open, 1); E.open = -1; drawCols(); };
+    $('cl').addEventListener('input', () => $('cerr').textContent = '');
+    $('cok').onclick = () => {
+      const l = $('cl').value.trim(); if (!l) { $('cerr').textContent = 'Enter a column name.'; return; }
+      const t = $('ct').value, n = Object.assign({}, f, { l, t, r: $('cr').checked ? 1 : 0, by: $('cb').value }); delete n._new;
+      if (t === 'number') { const a = $('cmin').value, b = $('cmax').value; if (a !== '' && b !== '' && +a > +b) { $('cerr').textContent = 'Min must be less than max.'; return; } n.min = a === '' ? '' : +a; n.max = b === '' ? '' : +b; } else { delete n.min; delete n.max; }
+      if (t === 'select') { const o = $('co').value.split('\n').map(s => s.trim()).filter(Boolean); if (o.length < 2) { $('cerr').textContent = 'Add at least 2 options.'; return; } n.o = o; } else delete n.o;
+      if (n.by === 't') n.r = 0;
+      L[E.open] = n; E.open = -1; drawCols();
+    };
+  }
+}
+function drawStaff() {
+  const box = $('staff');
+  box.innerHTML = A.staff.map(s => {
+    const scope = s.camps === 'ALL' ? 'All camps' : s.camps.split(',').map(id => { const c = A.camps.find(x => x.id === id); return c ? c.dateLabel : id; }).join(', ');
+    return `<div class="list-row"><div class="grow"><div class="ell">${esc(s.email)}</div><div class="muted ell">${esc(s.role === 'Team' ? scope + ' · status, remarks, Excel' : 'All camps, full setup')}</div></div><span class="pill ${s.role === 'Team' ? 'p-violet' : 'p-blue'}">${esc(s.role)}</span>${s.role === 'Owner' || s.email === A.me.email ? '<span class="ib" style="width:30px"></span>' : `<button class="ib danger" data-rs="${esc(s.email)}" aria-label="Remove access">&#10005;</button>`}</div>`;
+  }).join('') + `<div style="border-top:1px solid var(--border);margin-top:6px;padding-top:12px">
+    <div class="field"><label class="lb" for="se">Staff Gmail ID</label><input id="se" type="email" placeholder="kiran.desai@gmail.com"></div>
+    <div class="g2" style="margin-bottom:10px"><div><span class="lb">Role</span><select id="sr"><option value="Team">Team: status, remarks, Excel</option><option value="Admin">Admin: full setup</option></select></div>
+    <div id="scw"><span class="lb">Camps</span><select id="sc"><option value="ALL">All camps</option><option value="SEL">Selected camps</option></select></div></div>
+    <div id="scl" class="hide" style="margin-bottom:10px">${A.camps.map(c => `<label class="chk" style="margin-bottom:6px"><input type="checkbox" value="${c.id}" class="scc"> <span>${esc(c.dateLabel)}${c.venue ? ' · ' + esc(c.venue) : ''}</span></label>`).join('') || '<span class="muted">No camps yet</span>'}</div>
+    <div class="err" id="serr"></div><button class="primary full" id="sadd">Give access</button><p class="okmsg" id="sok"></p></div>`;
+  $('sr').onchange = () => { const team = $('sr').value === 'Team'; $('scw').classList.toggle('hide', !team); if (!team) $('scl').classList.add('hide'); else $('scl').classList.toggle('hide', $('sc').value !== 'SEL'); };
+  $('sc').onchange = () => $('scl').classList.toggle('hide', $('sc').value !== 'SEL');
+  $('se').addEventListener('input', () => $('serr').textContent = '');
+  $('sadd').onclick = async () => {
+    const email = $('se').value.trim().toLowerCase();
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { $('serr').textContent = 'Enter a valid Gmail ID.'; return; }
+    const role = $('sr').value; let camps = [];
+    if (role === 'Team' && $('sc').value === 'SEL') { camps = [...document.querySelectorAll('.scc:checked')].map(x => x.value); if (!camps.length) { $('serr').textContent = 'Tick at least one camp.'; return; } }
+    const b = $('sadd'); b.disabled = true; b.textContent = 'Saving…';
+    try { await api('addStaff', TOKEN, email, role, camps); A = await api('getAdminData', TOKEN); drawStaff(); $('sok').textContent = email + ' can now sign in on this page with that Gmail ID.'; }
+    catch (e) { b.disabled = false; b.textContent = 'Give access'; handleErr(e, $('serr')); }
+  };
+  box.querySelectorAll('[data-rs]').forEach(b => b.onclick = async () => {
+    if (b.dataset.confirm !== '1') { b.dataset.confirm = '1'; b.textContent = 'Remove?'; return; }
+    b.disabled = true;
+    try { await api('removeStaff', TOKEN, b.dataset.rs); A = await api('getAdminData', TOKEN); drawStaff(); } catch (e) { handleErr(e); b.disabled = false; }
+  });
+}
+
+/* ================= Start ================= */
+if (!API || API.indexOf('http') !== 0) app.innerHTML = '<div class="card">App is not configured: missing server link.</div>';
+else CAMP ? donorView() : staffView();
+
+</script>
+</body>
+</html>
