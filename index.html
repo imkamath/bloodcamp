@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#004C8F">
 <title>Blood Donation Camp - HDFC BANK LIMITED</title>
 <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAIAAABMXPacAAAEhUlEQVR42u2dvYskRRiHf29V9fY4vcHthyCKJnufi5rIsMt6geYihwcGsolykWJiYLjBZgoeyImCCAZGogjiv3Aieh4mHoqpmKgzG7h9O73bVa/BXKDgzs1OTff02r8n7Rn646nq+ur3LemvraP5WKuDQefay9nuDryHtf/9M+9hbb6zO/zoY1lehvfNvzOHU4QxSBJYC2OO8wRjjj3azHvCqUN1mkMUQCiAAggFUAChAAogFEABhAIogFAABVAAoQAKIBTQUtxsVgqNQAFBdWvCcG7StUZj4BycrfB6RgRFCPMWIKJ5juIQAmiVi/L9vu7nk/xW93P9408ErXxRPl2QbjdyHdRFln3N76bPP+d6T8H7ClfDRXQ4dE8+ca+Ajyn7QHr1ij23Jp1OhUvEIcDa8vYPxZdfSbcbUw8iBQiGw+TZZ9IXX6jvrSky/lByeSu5vFXDhRyeOVN8+hmyrAGvoNKj9HC2yvvVST85CQEhoNIWwHtYq3k+rjTU2giPHn21Ak7UKai4dycY93kSu6EcBxAKoABCARRAKIACCAVQAKEACiAUQAGEAiiAoIGB2iHUHeIrRoQC/rGKJawBc+OgKH/5bQ/1KRConntkqZs6BaTNAkJQY+TOr4Pea58gMdC6vqs4LL95b3vz/EMhqJ1r5WtEDRAARsRIPbkeRESb0QCwF0QBFMBHQAEUQCiAAggFoJ1TEdZGRQ5ZC2npNA5E7j2BGAG6txfxb6v9gRZFSwUUhQ4GEImJhXKd7Zcw9WSIMfpX7i5euE/gyv+y7APmwvnOtVdkMZs+RCmoy66/NZtrsm1qTowBkGxtJlub0W1AUcDFhuq1tBnQ6DDVsnTxzUh7GTXCcQrZDeU4gAIIBVAAoQAKIJjHZJz3UcMo1fbOx6nGPj3vHdKUxXD6gVjkJIK1Lt/ZnT7phDHYzxeuXkk2egjhdO2eg8h8QcaUt24Xn3+BLGYyLrjhBx9GTUf/3jdnzyYbPQRtUYOiCsD/eOfgnXdldSVqOlqWl2MEQEUeaOtLLE3lwVVZWooSEJVYTYCyRNCWClBFWcL7mGfIbijHARRAKIACCAVQAEGLoyRFRKSuEDHRxsweNkJAUA3FEUKtQXqhGZsPuyaEB196dPnmje1a40WDPv7YShPikxtRAxY7ydPrD2NeAZoUoPNIVWCYquBfqbDbmqqA3VAKoABCARRAKIACCAVQAKEACiAUQAGEAiiAUAD4VQQmilYYfSEsFX+KfKLtbKXi7WxHJ5q/AFXJsmYlnKhhO1trAUiWxW/a7WJ3te+kRze/RnkEHyrMWCOiReEuXXQbPageW7pVIVJ+e6v86WdJ02q3NDfm6LvvEX0W6a+txz6auwc4LKoucdrvd15/dfH626PdrMdsdL3/xpvDG+/LSlTk0EQsLEi3GylgJq+gLhazyqu8iEy2e7tkmazGRg7VlC9oZo1wDZTlpCcKIT5yiN1QjgMIBVAAoQAKIBRAAYQCKIBQAAUQCqAAQgEUQCiAAjDXDXROfAjMloIZpQq+36I89DRlcfwbDItjV7PWZA4AAAAASUVORK5CYII=">
 <style>
@@ -60,17 +61,49 @@ button:disabled{opacity:.55;cursor:default}
 @media print{body{background:#fff}.noprint{display:none!important}.card{border:none}}
 
 .drow{border-top:1px solid var(--border);padding:10px 0}
-.drow:first-child{border-top:none}
-.sbtn{font-size:12px;padding:6px 8px}
-.sbtn.s{background:var(--green-bg);color:var(--green);border-color:var(--green);font-weight:600}
-.sbtn.r{background:var(--red-bg);color:var(--red);border-color:var(--red);font-weight:600}
-.rmk{display:flex;gap:8px;align-items:center;margin-top:8px}
-.rmk input,.rmk select{flex:1;padding:7px 9px;font-size:14px}
 .saved{font-size:12px;min-width:58px}
 .upd{font-size:11px;color:var(--faint);margin-top:4px}
 .qrbox{background:#fff;border:1px solid var(--border);border-radius:8px;padding:4px;line-height:0;flex-shrink:0}
 #toast{position:fixed;left:50%;bottom:20px;transform:translateX(-50%);background:#1F2328;color:#fff;padding:10px 16px;border-radius:10px;font-size:14px;display:none;z-index:9;max-width:90%}
 #toast.bad{background:var(--red)}
+/* ===== Colourful HDFC theme ===== */
+body{background:#EEF4FB}
+.card{border-color:#D6E3F2}
+.hero{background:var(--blue);color:#fff;border-radius:14px 14px 0 0;padding:14px 16px}
+.hero.solo{border-radius:14px;margin-bottom:14px}
+.hero .org{color:#fff}
+.hero .col{color:#CFE0F3}
+.hero .brand img{background:#fff;border-radius:8px;padding:3px}
+.strip{background:var(--red);color:#fff;padding:9px 16px;border-radius:0 0 14px 14px;display:flex;gap:8px;align-items:center;margin-bottom:14px;font-size:14px}
+.strip .sr{margin-left:auto;font-size:13px;opacity:.95}
+.rolepill{background:#fff;color:var(--blue);font-weight:600}
+.ghost{background:transparent;color:#fff;border-color:rgba(255,255,255,.6)}
+.ghost:hover{background:rgba(255,255,255,.12)}
+label.lb,.lb{color:#0C447C}
+input,select,textarea{border-color:#B5D4F4}
+button.primary.red{background:var(--red);border-color:var(--red);font-weight:600;height:44px}
+button.primary.red:hover{background:#C81C22}
+.xlbtn{background:var(--green);border-color:var(--green);color:#fff;font-weight:600}
+.xlbtn:hover{background:#17652F}
+.tabs button{border-radius:20px}
+.tabs button.on{background:var(--blue);border-color:var(--blue);color:#fff}
+.banner{background:#FFF4DC;color:#7A4B00;border:1px solid #F4D48B;border-radius:10px;padding:9px 12px;margin:10px 0 12px;font-size:13px}
+.tagpill{background:var(--blue-bg);color:var(--blue)}
+#tstats{grid-template-columns:repeat(2,minmax(0,1fr))}
+.stat{color:#fff}
+.stat .t{color:rgba(255,255,255,.9)}
+.stat.c1{background:#004C8F}.stat.c2{background:#C27C0E}.stat.c3{background:#1E7B3C}.stat.c4{background:#ED232A}
+.seg button{border-radius:20px;border-color:#B5D4F4;color:#0C447C}
+.seg button.on{background:var(--blue);border-color:var(--blue);color:#fff;font-weight:600}
+#tlist .drow{background:#fff;border:1px solid #E3EAF3;border-left:5px solid #C27C0E;border-radius:10px;padding:10px;margin-top:8px}
+#tlist .drow.ok{border-left-color:#1E7B3C}
+#tlist .drow.no{border-left-color:#ED232A}
+.sbtn{font-size:12px;padding:6px 10px;border-radius:20px}
+.sbtn.s{background:var(--green);color:#fff;border-color:var(--green);font-weight:600}
+.sbtn.r{background:var(--red);color:#fff;border-color:var(--red);font-weight:600}
+.rmk{display:flex;gap:8px;align-items:center;margin-top:8px}
+.rmk input,.rmk select{flex:1;padding:7px 9px;font-size:14px}
+.poster .hero{margin-bottom:6px}
 </style>
 </head>
 <body>
@@ -174,6 +207,14 @@ const store = {
 function brand(collab, size) {
   return `<div class="brand"><img src="${LOGO}" alt="HDFC Bank logo" style="${size ? 'width:' + size + 'px;height:' + size + 'px' : ''}"><div class="grow"><div class="org">HDFC BANK LIMITED</div>${collab != null ? `<div class="col">in collaboration with ${esc(collab || '—')}</div>` : ''}</div></div>`;
 }
+function hero(collab, extra, solo) {
+  return `<div class="hero${solo ? ' solo' : ''}">${brand(collab, solo ? 34 : 44)}${extra || ''}</div>`;
+}
+function strip(date, venue) {
+  return `<div class="strip"><span aria-hidden="true">&#x1FA78;</span><b>Blood donation camp</b><span class="sr">${esc(date)}${venue ? ' · ' + esc(venue) : ''}</span></div>`;
+}
+function todayIso() { const d = new Date(); return d.getFullYear() + '-' + String(d.getMonth() + 1).padStart(2, '0') + '-' + String(d.getDate()).padStart(2, '0'); }
+function campTag(c) { const t = todayIso(); return c.date === t ? 'Today' : c.date > t ? 'Upcoming' : 'Past'; }
 function dmyToIso(v) { const m = /^(\d{2})-(\d{2})-(\d{4})$/.exec(v || ''); return m ? `${m[3]}-${m[2]}-${m[1]}` : ''; }
 function fullName(e) { return e.fn != null || e.ln != null ? ((e.fn || '') + ' ' + (e.ln || '')).trim() : (e.name || ''); }
 function checkValue(f, v, requireIt) {
@@ -226,13 +267,13 @@ let FORM = null;
 async function donorView() {
   app.innerHTML = '<p class="muted">Loading…</p>';
   try { FORM = await api('getForm', CAMP); } catch (e) { app.innerHTML = `<div class="card">${brand(null)}<p style="margin-top:14px">${esc(e.message)}</p><button onclick="location.reload()">Try again</button></div>`; return; }
-  if (FORM.error) { app.innerHTML = `<div class="card">${brand(null)}<p style="margin-top:14px">${esc(FORM.error)}</p></div>`; return; }
+  if (FORM.error) { app.innerHTML = hero(null, '', true) + `<div class="card">${esc(FORM.error)}</div>`; return; }
   if (POSTER) return posterView();
-  const head = `<div class="card">${brand(FORM.collab)}<div class="row" style="margin-top:14px"><span class="drop" aria-hidden="true">&#x1FA78;</span><b>Blood donation camp</b></div><div class="muted">${esc(FORM.date)}${FORM.venue ? ' · ' + esc(FORM.venue) : ''}</div></div>`;
+  const head = hero(FORM.collab) + strip(FORM.date, FORM.venue);
   if (FORM.status !== 'Open') { app.innerHTML = head + `<div class="card">Registration for this camp is closed. Thank you for your interest.</div>`; return; }
   app.innerHTML = head + `<div class="card">${FORM.cols.map(f => fieldHtml(f, 'f_' + f.k)).join('')}
     <div id="dupbox" class="hide" style="background:var(--amber-bg);color:var(--amber);border-radius:8px;padding:10px;margin-bottom:10px;font-size:14px"></div>
-    <div class="err" id="ferr"></div><button class="primary full" id="fsub">Submit</button></div>`;
+    <div class="err" id="ferr"></div><button class="primary red full" id="fsub">Submit registration</button></div>`;
   FORM.cols.forEach(f => clearOnInput('f_' + f.k));
   $('fsub').onclick = () => donorSubmit(false);
 }
@@ -245,7 +286,7 @@ async function donorSubmit(force) {
   try {
     const r = await api('submitEntry', CAMP, data, force);
     if (r.ok) {
-      app.innerHTML = `<div class="card">${brand(FORM.collab)}</div><div class="card" style="text-align:center">
+      app.innerHTML = hero(FORM.collab) + strip(FORM.date, FORM.venue) + `<div class="card" style="text-align:center">
         <div style="font-size:40px" aria-hidden="true">&#x2705;</div><h2 style="margin:6px 0">Registration complete</h2>
         <p class="muted" style="margin:0">Your token number</p><div style="font-size:44px;font-weight:700;color:var(--blue)">${esc(r.token)}</div>
         <p>Please show this number at the registration desk. Thank you for donating blood.</p>
@@ -259,11 +300,11 @@ async function donorSubmit(force) {
     }
     if (r.errors) Object.keys(r.errors).forEach(k => { const e = $('f_' + k + '_e'); if (e) e.textContent = r.errors[k]; });
   } catch (e) { $('ferr').textContent = e.message; }
-  btn.disabled = false; btn.textContent = 'Submit';
+  btn.disabled = false; btn.textContent = 'Submit registration';
 }
 function posterView() {
   const link = campLink(CAMP);
-  app.innerHTML = `<div class="card poster">${brand(FORM.collab, 56)}
+  app.innerHTML = `<div class="card poster"><div class="hero solo" style="text-align:left">${brand(FORM.collab, 50)}</div>
     <h2 style="font-size:24px;margin:18px 0 4px"><span class="drop" aria-hidden="true">&#x1FA78;</span> Blood donation camp</h2>
     <div style="font-size:17px">${esc(FORM.date)}${FORM.venue ? ' · ' + esc(FORM.venue) : ''}</div>
     <div id="qr">${qrSvg(link, 8)}</div><div style="font-size:18px;font-weight:600">Scan to register as a donor</div>
@@ -281,7 +322,7 @@ async function staffView() {
   loginView();
 }
 function loginView(msg) {
-  app.innerHTML = `<div class="card">${brand(null)}<h2>Staff sign in</h2><p class="muted" style="margin-top:0">Enter your Gmail ID. We'll email you a 6-digit code.</p>
+  app.innerHTML = hero(null, '', true) + `<div class="card"><h2 style="margin-top:0">Staff sign in</h2><p class="muted" style="margin-top:0">Enter your Gmail ID. We'll email you a 6-digit code.</p>
     ${msg ? `<p class="err">${esc(msg)}</p>` : ''}
     <div class="field"><label class="lb" for="le">Gmail ID</label><input id="le" type="email" autocomplete="email" placeholder="name@gmail.com" value="${esc(store.get('bdc2_email') || '')}"></div>
     <div id="codebox" class="field hide"><label class="lb" for="lc">Sign-in code</label><input id="lc" inputmode="numeric" maxlength="6" placeholder="6-digit code"></div>
@@ -321,7 +362,7 @@ function toast(msg, bad) {
 function isAdmin() { return ME && (ME.role === 'Admin' || ME.role === 'Owner'); }
 function homeView() {
   if (!isAdmin()) TAB = 'team';
-  app.innerHTML = `<div class="card" style="padding:12px 16px">${brand(null, 36)}<div class="row" style="margin-top:8px"><span class="muted grow ell">${esc(ME.email)}</span><span class="pill ${ME.role === 'Team' ? 'p-violet' : 'p-blue'}">${esc(ME.role)}</span><button class="ib" id="so">Sign out</button></div></div>
+  app.innerHTML = hero(null, `<div class="row" style="margin-top:10px"><span class="grow ell" style="color:#CFE0F3;font-size:13px">${esc(ME.email)}</span><span class="pill rolepill">${esc(ME.role)}</span><button class="ib ghost" id="so">Sign out</button></div>`, true) + `
     ${isAdmin() ? `<div class="tabs"><button id="tt" class="${TAB === 'team' ? 'on' : ''}">Team screen</button><button id="ta" class="${TAB === 'admin' ? 'on' : ''}">Admin</button></div>` : ''}
     <div id="view"></div>`;
   $('so').onclick = async () => { stopPoll(); try { await api('signOut', TOKEN); } catch (e) { } TOKEN = null; store.del('bdc2_token'); loginView(); };
@@ -337,15 +378,22 @@ async function teamView() {
   const v = $('view'); v.innerHTML = '<p class="muted">Loading camps…</p>';
   try { T.camps = await api('getTeamCamps', TOKEN); } catch (e) { return handleErr(e, v); }
   if (!T.camps.length) { v.innerHTML = '<div class="card">No camps yet. An admin needs to create one.</div>'; return; }
-  if (!T.camps.some(c => c.id === T.camp)) T.camp = T.camps[0].id;
-  v.innerHTML = `<div class="card"><label class="lb" for="tc">Camp</label><select id="tc">${T.camps.map(c => `<option value="${c.id}" ${c.id === T.camp ? 'selected' : ''}>${esc(c.dateLabel)}${c.venue ? ' · ' + esc(c.venue) : ''}${c.status !== 'Open' ? ' (closed)' : ''}</option>`).join('')}</select>
-    <div class="g2" style="margin-top:12px" id="tstats"></div>
+  const tday = T.camps.find(c => c.date === todayIso());
+  if (tday && !T.picked) T.camp = tday.id;
+  else if (!T.camps.some(c => c.id === T.camp)) {
+    const up = T.camps.filter(c => c.date > todayIso()).sort((a, b) => a.date < b.date ? -1 : 1)[0];
+    T.camp = (up || T.camps[0]).id;
+  }
+  v.innerHTML = `<div class="card"><label class="lb" for="tc">Select camp</label><select id="tc">${T.camps.map(c => `<option value="${c.id}" ${c.id === T.camp ? 'selected' : ''}>${esc(c.dateLabel)}${c.venue ? ' · ' + esc(c.venue) : ''} (${campTag(c)}${c.status !== 'Open' ? ', closed' : ''})</option>`).join('')}</select>
+    <div class="banner" id="tbanner"></div>
+    <div class="g2" id="tstats"></div>
     <div class="seg" id="tf" style="margin-top:12px"><button data-f="pending">Status not updated</button><button data-f="all">All records</button></div>
     <input id="tq" placeholder="Search name or mobile" style="margin-top:10px" value="${esc(T.q)}">
     <div id="tlist" style="margin-top:6px"><p class="muted">Loading donors…</p></div>
-    <button class="full" id="txl" style="margin-top:12px">&#x2B07; Download Excel</button>
+    <button class="full xlbtn" id="txl" style="margin-top:12px">&#x2B07; Download Excel</button>
     <p class="muted" style="margin-bottom:0">Updates every 20 seconds. Every change records who made it and when.</p></div>`;
-  $('tc').onchange = () => { T.camp = $('tc').value; store.set('bdc2_camp', T.camp); T.expanded = null; loadEntries(); };
+  $('tc').onchange = () => { T.camp = $('tc').value; T.picked = true; store.set('bdc2_camp', T.camp); T.expanded = null; T.filter = 'pending'; drawBanner(); loadEntries(); };
+  drawBanner();
   $('tq').oninput = () => { T.q = $('tq').value; drawEntries(); };
   document.querySelectorAll('#tf button').forEach(b => b.onclick = () => { T.filter = b.dataset.f; drawEntries(); });
   $('txl').onclick = () => downloadExcel(T.camp, $('txl'));
@@ -357,11 +405,15 @@ async function loadEntries(silent) {
   if (silent && T.editing) return;
   drawEntries();
 }
+function drawBanner() {
+  const c = T.camps.find(x => x.id === T.camp); if (!c || !$('tbanner')) return;
+  $('tbanner').innerHTML = `<b>You are updating:</b> ${esc(c.dateLabel)}${c.venue ? ' · ' + esc(c.venue) : ''}<br>with ${esc(c.collab)} <span class="pill tagpill">${campTag(c)}</span>${c.status !== 'Open' ? ' <span class="pill">Registration closed</span>' : ''}`;
+}
 function teamCols() { return T.data.camp.cols.filter(f => f.by === 't' && f.k !== 'st'); }
 function drawEntries() {
   if (!T.data || !$('tlist')) return;
   const all = T.data.entries, pend = all.filter(e => !e.st).length, c = T.data.counts;
-  $('tstats').innerHTML = `<div class="stat"><div class="t">Registered / pending</div><div class="n">${c.total} / ${pend}</div></div><div class="stat"><div class="t">Successful / rejected</div><div class="n">${c.successful} / ${c.rejected}</div></div>`;
+  $('tstats').innerHTML = `<div class="stat c1"><div class="t">Registered</div><div class="n">${c.total}</div></div><div class="stat c2"><div class="t">Pending</div><div class="n">${pend}</div></div><div class="stat c3"><div class="t">Successful</div><div class="n">${c.successful}</div></div><div class="stat c4"><div class="t">Rejected</div><div class="n">${c.rejected}</div></div>`;
   document.querySelectorAll('#tf button').forEach(b => { b.classList.toggle('on', b.dataset.f === T.filter); b.textContent = b.dataset.f === 'pending' ? `Status not updated (${pend})` : `All records (${all.length})`; });
   const cols = T.data.camp.cols, has = k => cols.some(f => f.k === k), q = T.q.trim().toLowerCase();
   const rows = all.filter(e => (T.filter === 'all' || !e.st) && (!q || fullName(e).toLowerCase().includes(q) || String(e.mob || '').includes(q) || String(e._tok) === q));
@@ -369,7 +421,7 @@ function drawEntries() {
   const tc = teamCols(), donorCols = cols.filter(f => f.by === 'd' && !['fn', 'ln', 'name'].includes(f.k));
   $('tlist').innerHTML = rows.map(e => {
     const tok = esc(e._tok), sub = [has('mob') ? e.mob : '', has('bg') ? (e.bg || 'Blood group not given') : ''].filter(Boolean).map(esc).join(' · ');
-    return `<div class="drow" data-tok="${tok}">
+    return `<div class="drow ${e.st === 'Successful' ? 'ok' : e.st === 'Rejected' ? 'no' : ''}" data-tok="${tok}">
       <div class="row"><span class="pill p-blue">#${tok}</span><div class="grow" style="cursor:pointer" data-x="${tok}"><div class="ell" style="font-weight:600">${esc(fullName(e))}</div><div class="muted ell">${sub} <span style="color:var(--blue)">${T.expanded === String(e._tok) ? '▲ less' : '▼ details'}</span></div></div>
       <button class="sbtn ${e.st === 'Successful' ? 's' : ''}" data-st="Successful" data-tok="${tok}">Successful</button><button class="sbtn ${e.st === 'Rejected' ? 'r' : ''}" data-st="Rejected" data-tok="${tok}">Rejected</button></div>
       ${T.expanded === String(e._tok) ? `<div class="muted" style="margin:6px 0 0 4px">${donorCols.map(f => `${esc(f.l)}: <b style="color:var(--text);font-weight:500">${esc(e[f.k] || '-')}</b>`).join(' · ')}<br>Submitted ${esc(e._at)}</div>` : ''}
@@ -442,11 +494,11 @@ async function adminView(msg, newId) {
 }
 function drawCamps() {
   const box = $('camps');
-  box.innerHTML = `<button class="primary full" id="newc">+ New camp</button>${A.camps.length ? '<button class="full" id="xall" style="margin-top:8px">Download all camps (Excel)</button>' : ''}` + (A.camps.length ? A.camps.map(c => {
+  box.innerHTML = `<button class="primary full" id="newc">+ New camp</button>${A.camps.length ? '<button class="full xlbtn" id="xall" style="margin-top:8px">&#x2B07; Download all camps (Excel)</button>' : ''}` + (A.camps.length ? A.camps.map(c => {
     const link = campLink(c.id), cnt = c.counts;
     return `<div class="list-row" style="flex-wrap:wrap"><div class="grow" style="min-width:60%"><div style="font-weight:600">${esc(c.dateLabel)}${c.venue ? ' · ' + esc(c.venue) : ''}</div>
       <div class="muted ell">with ${esc(c.collab)}${cnt ? ` · ${cnt.total} registered · ${cnt.successful} successful · ${cnt.pending} pending` : ''}</div></div>
-      <span class="pill ${c.status === 'Open' ? 'p-green' : ''}">${esc(c.status)}</span>
+      <span class="pill tagpill">${campTag(c)}</span><span class="pill ${c.status === 'Open' ? 'p-green' : ''}">${esc(c.status)}</span>
       <div class="row" style="width:100%;flex-wrap:wrap;margin-top:6px">
         <button class="ib" data-a="edit" data-id="${c.id}">Edit</button>
         <a class="btn ib" href="${esc(link)}&poster=1" target="_blank" rel="noopener">QR poster</a>
